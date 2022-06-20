@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>References | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</title>
+  <meta name="description" content="References | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="References | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="References | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  
+  
+  
+
+<meta name="author" content="Rasel Biswas" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="A-r-codes-used-in-this-study.html"/>
+
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"></a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="1-intro.html"><a href="1-intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="1-intro.html"><a href="1-intro.html#background"><i class="fa fa-check"></i><b>1.1</b> Background</a></li>
+<li class="chapter" data-level="1.2" data-path="1-intro.html"><a href="1-intro.html#literature"><i class="fa fa-check"></i><b>1.2</b> Literature review</a></li>
+<li class="chapter" data-level="1.3" data-path="1-intro.html"><a href="1-intro.html#motivation-of-the-study"><i class="fa fa-check"></i><b>1.3</b> Motivation of the study</a></li>
+<li class="chapter" data-level="1.4" data-path="1-intro.html"><a href="1-intro.html#objectives-of-the-study"><i class="fa fa-check"></i><b>1.4</b> Objectives of the study</a></li>
+<li class="chapter" data-level="1.5" data-path="1-intro.html"><a href="1-intro.html#organization-of-the-study"><i class="fa fa-check"></i><b>1.5</b> Organization of the study</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="2-methodology.html"><a href="2-methodology.html"><i class="fa fa-check"></i><b>2</b> Methodology</a><ul>
+<li class="chapter" data-level="2.1" data-path="2-methodology.html"><a href="2-methodology.html#multilevel-model"><i class="fa fa-check"></i><b>2.1</b> Multilevel model</a></li>
+<li class="chapter" data-level="2.2" data-path="2-methodology.html"><a href="2-methodology.html#the-multilevel-linear-regression-model"><i class="fa fa-check"></i><b>2.2</b> The multilevel linear regression model</a></li>
+<li class="chapter" data-level="2.3" data-path="2-methodology.html"><a href="2-methodology.html#the-multilevel-logistic-regression-model"><i class="fa fa-check"></i><b>2.3</b> The multilevel logistic regression model</a></li>
+<li class="chapter" data-level="2.4" data-path="2-methodology.html"><a href="2-methodology.html#parameter-estimation-in-multilevel-logistic-regression-model"><i class="fa fa-check"></i><b>2.4</b> Parameter estimation in multilevel logistic regression model</a></li>
+<li class="chapter" data-level="2.5" data-path="2-methodology.html"><a href="2-methodology.html#penalized-quasi-likelihood"><i class="fa fa-check"></i><b>2.5</b> Penalized quasi-likelihood</a></li>
+<li class="chapter" data-level="2.6" data-path="2-methodology.html"><a href="2-methodology.html#adaptive-gaussian-quadrature"><i class="fa fa-check"></i><b>2.6</b> Adaptive Gaussian quadrature</a></li>
+<li class="chapter" data-level="2.7" data-path="2-methodology.html"><a href="2-methodology.html#laplace-approximation"><i class="fa fa-check"></i><b>2.7</b> Laplace approximation</a></li>
+<li class="chapter" data-level="2.8" data-path="2-methodology.html"><a href="2-methodology.html#confidence-interval-of-the-estimates"><i class="fa fa-check"></i><b>2.8</b> Confidence interval of the estimates</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="2-methodology.html"><a href="2-methodology.html#wald-type-confidence-interval"><i class="fa fa-check"></i><b>2.8.1</b> Wald-type confidence interval</a></li>
+<li class="chapter" data-level="2.8.2" data-path="2-methodology.html"><a href="2-methodology.html#profile-likelihood-confidence-interval"><i class="fa fa-check"></i><b>2.8.2</b> Profile likelihood confidence interval</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="3-simulation.html"><a href="3-simulation.html"><i class="fa fa-check"></i><b>3</b> Simulation and analysis techniques</a><ul>
+<li class="chapter" data-level="3.1" data-path="3-simulation.html"><a href="3-simulation.html#simulation-model-and-procedure"><i class="fa fa-check"></i><b>3.1</b> Simulation model and procedure</a></li>
+<li class="chapter" data-level="3.2" data-path="3-simulation.html"><a href="3-simulation.html#analysis-techniques"><i class="fa fa-check"></i><b>3.2</b> Analysis techniques</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="3-simulation.html"><a href="3-simulation.html#percentage-relative-bias"><i class="fa fa-check"></i><b>3.2.1</b> Percentage relative bias</a></li>
+<li class="chapter" data-level="3.2.2" data-path="3-simulation.html"><a href="3-simulation.html#non-coverage-rate-of-confidence-interval"><i class="fa fa-check"></i><b>3.2.2</b> Non-coverage rate of confidence interval</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="4-simulation-results.html"><a href="4-simulation-results.html"><i class="fa fa-check"></i><b>4</b> The simulation results</a><ul>
+<li class="chapter" data-level="4.1" data-path="4-simulation-results.html"><a href="4-simulation-results.html#rate-of-model-convergence"><i class="fa fa-check"></i><b>4.1</b> Rate of model convergence</a></li>
+<li class="chapter" data-level="4.2" data-path="4-simulation-results.html"><a href="4-simulation-results.html#the-bias-in-point-estimates"><i class="fa fa-check"></i><b>4.2</b> The bias in point estimates</a></li>
+<li class="chapter" data-level="4.3" data-path="4-simulation-results.html"><a href="4-simulation-results.html#non-coverage-of-confidence-interval"><i class="fa fa-check"></i><b>4.3</b> Non-coverage of confidence interval</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="5-conclusion.html"><a href="5-conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="A-r-codes-used-in-this-study.html"><a href="A-r-codes-used-in-this-study.html"><i class="fa fa-check"></i><b>A</b> R codes used in this study</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<!--
+This manually sets the header for this unnumbered chapter.
+-->
+
+<!--
+To remove the indentation of the first entry.
+-->
+<p></p>
+<!--
+To create a hanging indent and spacing between entries.  These three lines may need to be removed for styles that don't require the hanging indent.
+-->
+
+<!--
+This is just for testing with more citations for the bibliography at the end.  Add other entries into the list here if you'd like them to appear in the bibliography even if they weren't explicitly cited in the document.
+-->
+
+<div id="refs" class="references">
+<div>
+<p>Akter, N. J., &amp; Khan, M. H. R. (2018). Effect of sample size on the profile likelihood estimates for two-stage hierarchical linear models. <em>Journal of Biomedical Analytics</em>, <em>1</em>(2), 81–89.</p>
+</div>
+<div>
+<p>Austin, P. C. (2005). Bias in penalized quasi-likelihood estimation in random effects logistic regression models when the random effects are not normally distributed. <em>Communications in Statistics-Simulation and Computation</em>, <em>34</em>(3), 549–565.</p>
+</div>
+<div>
+<p>Bates, D. M. (2010). Lme4: Mixed-effects modeling with r.</p>
+</div>
+<div>
+<p>Breslow, N. E., &amp; Clayton, D. G. (1993). Approximate inference in generalized linear mixed models. <em>Journal of the American Statistical Association</em>, <em>88</em>(421), 9–25.</p>
+</div>
+<div>
+<p>Breslow, N. E., &amp; Lin, X. (1995). Bias correction in generalised linear mixed models with a single component of dispersion. <em>Biometrika</em>, <em>82</em>(1), 81–91.</p>
+</div>
+<div>
+<p>Clarke, P., &amp; Wheaton, B. (2007). Addressing data sparseness in contextual population research: Using cluster analysis to create synthetic neighborhoods. <em>Sociological Methods &amp; Research</em>, <em>35</em>(3), 311–351.</p>
+</div>
+<div>
+<p>Fitzmaurice, G. M., Laird, N. M., &amp; Ware, J. H. (2011). <em>Applied longitudinal analysis</em> (2nd ed.). Wiley.</p>
+</div>
+<div>
+<p>Goldstein, H. (2003). <em>Multilevel statistical models</em> (3rd ed.). London, UK: Arnold Publishers.</p>
+</div>
+<div>
+<p>Goldstein, H., &amp; Rasbash, J. (1996). Improved approximations for multilevel models with binary responses. <em>Journal of the Royal Statistical Society: Series A (Statistics in Society)</em>, <em>159</em>(3), 505–513.</p>
+</div>
+<div>
+<p>Gulliford, M. C., Ukoumunne, O. C., &amp; Chinn, S. (1999). Components of variance and intraclass correlations for the design of community-based surveys and intervention studies: Data from the health survey for england 1994. <em>American Journal of Epidemiology</em>, <em>149</em>(9), 876–883.</p>
+</div>
+<div>
+<p>Guo, G., &amp; Zhao, H. (2000). Multilevel modeling for binary data. <em>Annual Review of Sociology</em>, <em>26</em>(1), 441–462.</p>
+</div>
+<div>
+<p>Handayani, D., Notodiputro, K. A., Sadik, K., &amp; Kurnia, A. (2017). A comparative study of approximation methods for maximum likelihood estimation in generalized linear mixed models (glmm). In <em>AIP conference proceedings</em> (Vol. 1827, p. 020033). AIP Publishing.</p>
+</div>
+<div>
+<p>Hox, J. (1998). Multilevel modeling: When and why. In <em>Classification, data analysis, and data highways</em> (pp. 147–154). Springer.</p>
+</div>
+<div>
+<p>Hox, J. J. (2010). <em>Multilevel analysis: Techniques and applications, second edition (quantitative methodology series)</em>. Routledge. Retrieved from <a href="https://www.xarg.org/ref/a/1848728468/">https://www.xarg.org/ref/a/1848728468/</a></p>
+</div>
+<div>
+<p>Kreft, I. G. G. (1996). Are multilevel techniques necessary? An overview, including simulation studies. Unpublished manuscript, California State University at Los Angeles. Retrieved July 6, 2005 from http://www.calstatela.edu/faculty/ikreft/quarterly.html.</p>
+</div>
+<div>
+<p>Lesaffre, E., &amp; Spiessens, B. (2001). On the effect of the number of quadrature points in a logistic random effects model: An example. <em>Journal of the Royal Statistical Society: Series C (Applied Statistics)</em>, <em>50</em>(3), 325–335.</p>
+</div>
+<div>
+<p>Maas, C. J., &amp; Hox, J. J. (2004). Robustness issues in multilevel regression analysis. <em>Statistica Neerlandica</em>, <em>58</em>(2), 127–137.</p>
+</div>
+<div>
+<p>Maas, C. J., &amp; Hox, J. J. (2005). Sufficient sample sizes for multilevel modeling. <em>Methodology</em>, <em>1</em>(3), 86–92.</p>
+</div>
+<div>
+<p>McNeish, D. (2016). Estimation methods for mixed logistic models with few clusters. <em>Multivariate Behavioral Research</em>, <em>51</em>(6), 790–804.</p>
+</div>
+<div>
+<p>Moineddin, R., Matheson, F. I., &amp; Glazier, R. H. (2007). A simulation study of sample size for multilevel logistic regression models. <em>BMC Medical Research Methodology</em>, <em>7</em>(1), 34.</p>
+</div>
+<div>
+<p>Mok, M. (1995). <em>Sample size requirements for 2-level designs in educational research</em>.</p>
+</div>
+<div>
+<p>Paccagnella, O. (2011). Sample size and accuracy of estimates in multilevel models. <em>Methodology</em>.</p>
+</div>
+<div>
+<p>Raudenbush, S. W., &amp; Bryk, A. S. (2002). <em>Hierarchical linear models: Applications and data analysis methods</em> (2nd ed.). Thousand Oaks, CA: Sage Publications.</p>
+</div>
+<div>
+<p>Raudenbush, S. W., Yang, M.-L., &amp; Yosef, M. (2000). Maximum likelihood for generalized linear models with nested random effects via high-order, multivariate laplace approximation. <em>Journal of Computational and Graphical Statistics</em>, <em>9</em>(1), 141–157.</p>
+</div>
+<div>
+<p>Sastry, N., Ghosh-Dastidar, B., Adams, J., &amp; Pebley, A. R. (2006). The design of a multilevel survey of children, families, and communities: The los angeles family and neighborhood survey. <em>Social Science Research</em>, <em>35</em>(4), 1000–1024.</p>
+</div>
+<div>
+<p>Snijders, T., &amp; Bosker, R. (1999). <em>Multilevel analysis: An introduction to basic and advanced multilevel modeling.</em> SAGE Publications.</p>
+</div>
+<div>
+<p>Sommet, N., &amp; Morselli, D. (2017). Keep calm and learn multilevel logistic modeling: A simplified three-step procedure using stata, r, mplus, and spss. <em>International Review of Social Psychology</em>, <em>30</em>(1).</p>
+</div>
+<div>
+<p>Venzon, D. J., &amp; Moolgavkar, S. H. (1988). A method for computing profile-likelihood-based confidence intervals. <em>Applied Statistics</em>, <em>37</em>(1), 87. <a href="http://doi.org/10.2307/2347496">http://doi.org/10.2307/2347496</a></p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="A-r-codes-used-in-this-study.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>A R codes used in this study | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</title>
+  <meta name="description" content="A R codes used in this study | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="A R codes used in this study | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A R codes used in this study | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  
+  
+  
+
+<meta name="author" content="Rasel Biswas" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="conclusion.html"/>
+<link rel="next" href="references.html"/>
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#background"><i class="fa fa-check"></i><b>1.1</b> Background</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#literature"><i class="fa fa-check"></i><b>1.2</b> Literature review</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#motivation-of-the-study"><i class="fa fa-check"></i><b>1.3</b> Motivation of the study</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#objectives-of-the-study"><i class="fa fa-check"></i><b>1.4</b> Objectives of the study</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#organization-of-the-study"><i class="fa fa-check"></i><b>1.5</b> Organization of the study</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>2</b> Methodology</a><ul>
+<li class="chapter" data-level="2.1" data-path="methodology.html"><a href="methodology.html#multilevel-model"><i class="fa fa-check"></i><b>2.1</b> Multilevel model</a></li>
+<li class="chapter" data-level="2.2" data-path="methodology.html"><a href="methodology.html#the-multilevel-linear-regression-model"><i class="fa fa-check"></i><b>2.2</b> The multilevel linear regression model</a></li>
+<li class="chapter" data-level="2.3" data-path="methodology.html"><a href="methodology.html#the-multilevel-logistic-regression-model"><i class="fa fa-check"></i><b>2.3</b> The multilevel logistic regression model</a></li>
+<li class="chapter" data-level="2.4" data-path="methodology.html"><a href="methodology.html#parameter-estimation-in-multilevel-logistic-regression-model"><i class="fa fa-check"></i><b>2.4</b> Parameter estimation in multilevel logistic regression model</a></li>
+<li class="chapter" data-level="2.5" data-path="methodology.html"><a href="methodology.html#penalized-quasi-likelihood"><i class="fa fa-check"></i><b>2.5</b> Penalized quasi-likelihood</a></li>
+<li class="chapter" data-level="2.6" data-path="methodology.html"><a href="methodology.html#adaptive-gaussian-quadrature"><i class="fa fa-check"></i><b>2.6</b> Adaptive Gaussian quadrature</a></li>
+<li class="chapter" data-level="2.7" data-path="methodology.html"><a href="methodology.html#laplace-approximation"><i class="fa fa-check"></i><b>2.7</b> Laplace approximation</a></li>
+<li class="chapter" data-level="2.8" data-path="methodology.html"><a href="methodology.html#confidence-interval-of-the-estimates"><i class="fa fa-check"></i><b>2.8</b> Confidence interval of the estimates</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="methodology.html"><a href="methodology.html#wald-type-confidence-interval"><i class="fa fa-check"></i><b>2.8.1</b> Wald-type confidence interval</a></li>
+<li class="chapter" data-level="2.8.2" data-path="methodology.html"><a href="methodology.html#profile-likelihood-confidence-interval"><i class="fa fa-check"></i><b>2.8.2</b> Profile likelihood confidence interval</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="simulation.html"><a href="simulation.html"><i class="fa fa-check"></i><b>3</b> Simulation and analysis techniques</a><ul>
+<li class="chapter" data-level="3.1" data-path="simulation.html"><a href="simulation.html#simulation-model-and-procedure"><i class="fa fa-check"></i><b>3.1</b> Simulation model and procedure</a></li>
+<li class="chapter" data-level="3.2" data-path="simulation.html"><a href="simulation.html#analysis-techniques"><i class="fa fa-check"></i><b>3.2</b> Analysis techniques</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="simulation.html"><a href="simulation.html#percentage-relative-bias"><i class="fa fa-check"></i><b>3.2.1</b> Percentage relative bias</a></li>
+<li class="chapter" data-level="3.2.2" data-path="simulation.html"><a href="simulation.html#non-coverage-rate-of-confidence-interval"><i class="fa fa-check"></i><b>3.2.2</b> Non-coverage rate of confidence interval</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="simulation-results.html"><a href="simulation-results.html"><i class="fa fa-check"></i><b>4</b> The simulation results</a><ul>
+<li class="chapter" data-level="4.1" data-path="simulation-results.html"><a href="simulation-results.html#rate-of-model-convergence"><i class="fa fa-check"></i><b>4.1</b> Rate of model convergence</a></li>
+<li class="chapter" data-level="4.2" data-path="simulation-results.html"><a href="simulation-results.html#the-bias-in-point-estimates"><i class="fa fa-check"></i><b>4.2</b> The bias in point estimates</a></li>
+<li class="chapter" data-level="4.3" data-path="simulation-results.html"><a href="simulation-results.html#non-coverage-of-confidence-interval"><i class="fa fa-check"></i><b>4.3</b> Non-coverage of confidence interval</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="r-codes-used-in-this-study.html"><a href="r-codes-used-in-this-study.html"><i class="fa fa-check"></i><b>A</b> R codes used in this study</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="r-codes-used-in-this-study" class="section level1">
+<h1><span class="header-section-number">A</span> R codes used in this study</h1>
+
+<pre><code>library(lme4)
+
+# Setting the parameters values
+g_00 &lt;- -1
+g_01 &lt;- 0.3
+g_10 &lt;- 0.3
+g_11 &lt;- 0.3
+
+s2_1 &lt;- 1                   # Variance standardized to 1
+s01  &lt;- 0                   # Covariance assumed zero
+s2_e &lt;- (pi^2)/3            # Variance of the logistic distribution
+
+# Function for simulating data from two-level logistic regression model
+
+sim_fun &lt;- function(J, n_j, ICC){
+  s2_0 &lt;- s2_e / (1/ICC-1)  # Variance corresponding to specific ICC
+  
+  n_j &lt;- rep(n_j, J)  # Number of individuals in jth group
+  N &lt;- sum(n_j)       # Number of groups
+  
+  # Simulate the covariate values for this sample size.
+  
+  z &lt;- rnorm(J)
+  x &lt;- rnorm(N)
+  
+  # Generate (u_0j, u_1j) from a bivariate normal 
+  
+  mu &lt;- c(0, 0)
+  sig &lt;- matrix(c(s2_0, s01, s01, s2_1), ncol = 2)
+  u &lt;- MASS::mvrnorm(J, mu = mu, Sigma = sig)
+  
+  # Now form the linear predictor.  First, the group-level predictor. 
+  # There are J of these.
+  
+  pi_0 &lt;- g_00 + g_01*z + as.vector(u[,1])
+  pi_1 &lt;- g_10 + g_11*z + as.vector(u[,2])
+  eta &lt;- rep(pi_0, n_j) + rep(pi_1, n_j) * x
+  
+  # Transform back to the probability scale.
+  
+  p &lt;- exp(eta) / (1+exp(eta))
+  
+  # Simulate a Bernoulli from each individual distribution.
+  
+  y &lt;- rbinom(N, 1, p)
+  
+  sim_data &lt;- data.frame(Y=y, X=x, Z=rep(z,n_j), group=rep(1:J,n_j))
+}
+# End of the function &#39;sim_fun&#39;
+
+# Function for calculating percentage relative bias of the parameter estimates
+# and calculating non-coverage rates.
+
+analysis &lt;- function(J, n_j, ICC) {
+  sim_dat &lt;- sim_fun(J, n_j, ICC)
+  fit &lt;- glmer(Y ~ X + Z + X:Z + (X||group), family=binomial, data=sim_dat,
+               control=glmerControl(optCtrl=list(maxfun=2e5)))
+  
+  s2_0 &lt;- s2_e / (1/ICC-1)  ##variance corresponding to specific ICC
+  
+  true_val &lt;- c(g_00, g_10, g_01, g_11, sqrt(s2_0), 1)
+  theta_hat &lt;- c(as.numeric(fixef(fit)), as.data.frame(VarCorr(fit))[,5])
+  perc_rel_bias &lt;- ((theta_hat-true_val)/true_val)*100
+  
+  ci_profile &lt;- confint.merMod(object = fit, method = &quot;profile&quot;, quiet = TRUE)
+  
+  nc_u0  &lt;- ifelse (ci_profile[1] &lt; sqrt(s2_0) &amp; ci_profile[7]  &gt; sqrt(s2_0), 0, 1)
+  nc_u1  &lt;- ifelse (ci_profile[2] &lt; sqrt(s2_1) &amp; ci_profile[8]  &gt; sqrt(s2_1), 0, 1)
+  nc_int &lt;- ifelse (ci_profile[3] &lt; g_00       &amp; ci_profile[9]  &gt; g_00,       0, 1)
+  nc_x   &lt;- ifelse (ci_profile[4] &lt; g_10       &amp; ci_profile[10] &gt; g_10,       0, 1)
+  nc_z   &lt;- ifelse (ci_profile[5] &lt; g_01       &amp; ci_profile[11] &gt; g_01,       0, 1)
+  nc_xz  &lt;- ifelse (ci_profile[6] &lt; g_11       &amp; ci_profile[12] &gt; g_11,       0, 1)
+  
+  noncoverage &lt;- c(nc_int, nc_x, nc_z, nc_xz, nc_u0, nc_u1)
+  return (c(perc_rel_bias, noncoverage))
+}
+# End of the function &#39;analysis&#39;
+
+# Combination 01:
+c01 &lt;- replicate(1000, tryCatch(analysis(30, 5, 0.1), error=function(err) rep(NA,12)))
+r &lt;- rowMeans(apply(c01, 2, unlist), na.rm = TRUE)
+perc_conv &lt;- 1 - sum(is.na(c01[1,]))/1000
+
+# Combination 02:
+c02 &lt;- replicate(1000, tryCatch(analysis(30, 5, 0.2), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c02, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c02[1,]))/1000)
+
+# Combination 03:
+c03 &lt;- replicate(1000, tryCatch(analysis(30, 5, 0.3), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c03, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c03[1,]))/1000)
+
+# Combination 04:
+c04 &lt;- replicate(1000, tryCatch(analysis(30, 30, 0.1), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c04, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c04[1,]))/1000)
+
+# Combination 05:
+c05 &lt;- replicate(1000, tryCatch(analysis(30, 30, 0.2), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c05, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c05[1,]))/1000)
+
+# Combination 06:
+c06 &lt;- replicate(1000, tryCatch(analysis(30, 30, 0.3), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c06, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c06[1,]))/1000)
+
+# Combination 07:
+c07 &lt;- replicate(1000, tryCatch(analysis(30, 50, 0.1), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c07, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c07[1,]))/1000)
+
+# Combination 08:
+c08 &lt;- replicate(1000, tryCatch(analysis(30, 50, 0.2), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c08, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c08[1,]))/1000)
+
+# Combination 09:
+c09 &lt;- replicate(1000, tryCatch(analysis(30, 50, 0.3), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c09, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c09[1,]))/1000)
+
+# Combination 10:
+c10 &lt;- replicate(1000, tryCatch(analysis(50, 5, 0.1), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c10, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c10[1,]))/1000)
+
+# Combination 11:
+c11 &lt;- replicate(1000, tryCatch(analysis(50, 5, 0.2), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c11, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c11[1,]))/1000)
+
+# Combination 12:
+c12 &lt;- replicate(1000, tryCatch(analysis(50, 5, 0.3), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c12, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c12[1,]))/1000)
+
+# Combination 13:
+c13 &lt;- replicate(1000, tryCatch(analysis(50, 30, 0.1), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c13, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c13[1,]))/1000)
+
+# Combination 14:
+c14 &lt;- replicate(1000, tryCatch(analysis(50, 30, 0.2), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c14, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c14[1,]))/1000)
+
+# Combination 15:
+c15 &lt;- replicate(1000, tryCatch(analysis(50, 30, 0.3), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c15, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c15[1,]))/1000)
+
+# Combination 16:
+c16 &lt;- replicate(1000, tryCatch(analysis(50, 50, 0.1), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c16, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c16[1,]))/1000)
+
+# Combination 17:
+c17 &lt;- replicate(1000, tryCatch(analysis(50, 50, 0.2), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c17, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c17[1,]))/1000)
+
+# Combination 18:
+c18 &lt;- replicate(1000, tryCatch(analysis(50, 50, 0.3), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c18, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c18[1,]))/1000)
+
+# Combination 19:
+c19 &lt;- replicate(1000, tryCatch(analysis(100, 5, 0.1), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c19, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c19[1,]))/1000)
+
+# Combination 20:
+c20 &lt;- replicate(1000, tryCatch(analysis(100, 5, 0.2), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c20, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c20[1,]))/1000)
+
+# Combination 21:
+c21 &lt;- replicate(1000, tryCatch(analysis(100, 5, 0.3), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c21, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c21[1,]))/1000)
+
+# Combination 22:
+c22 &lt;- replicate(1000, tryCatch(analysis(100, 30, 0.1), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c22, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c22[1,]))/1000)
+
+# Combination 23:
+c23 &lt;- replicate(1000, tryCatch(analysis(100, 30, 0.2), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c23, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c23[1,]))/1000)
+
+# Combination 24:
+c24 &lt;- replicate(1000, tryCatch(analysis(100, 30, 0.3), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c24, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c24[1,]))/1000)
+
+# Combination 25:
+c25 &lt;- replicate(1000, tryCatch(analysis(100, 50, 0.1), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c25, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c25[1,]))/1000)
+
+# Combination 26:
+c26 &lt;- replicate(1000, tryCatch(analysis(100, 50, 0.2), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c26, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c26[1,]))/1000)
+
+# Combination 27:
+c27 &lt;- replicate(1000, tryCatch(analysis(100, 50, 0.3), error=function(err) rep(NA,12)))
+r &lt;- rbind(r, rowMeans(apply(c27, 2, unlist), na.rm = TRUE))
+perc_conv &lt;- c(perc_conv, 1 - sum(is.na(c27[1,]))/1000)
+
+r[,1:6]        # Relative bias of the six estimates
+r[,7:12]       # Non-coverage rates of profile CI of the six estimates
+perc_conv*100  # Percentages of Convergence in the 27 conditions
+
+</code></pre>
+<!--
+# The Second Appendix, for Fun
+-->
+
+<!--
+The bib chunk below must go last in this document according to how R Markdown renders.  More info is at http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+-->
+
+<!-- 
+If you'd like to change the name of the bibliography to something else,
+delete "References" and replace it.
+-->
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="conclusion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

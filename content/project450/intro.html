@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</title>
+  <meta name="description" content="Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  
+  
+  
+
+<meta name="author" content="Rasel Biswas" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="methodology.html"/>
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#background"><i class="fa fa-check"></i><b>1.1</b> Background</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#literature"><i class="fa fa-check"></i><b>1.2</b> Literature review</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#motivation-of-the-study"><i class="fa fa-check"></i><b>1.3</b> Motivation of the study</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#objectives-of-the-study"><i class="fa fa-check"></i><b>1.4</b> Objectives of the study</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#organization-of-the-study"><i class="fa fa-check"></i><b>1.5</b> Organization of the study</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>2</b> Methodology</a><ul>
+<li class="chapter" data-level="2.1" data-path="methodology.html"><a href="methodology.html#multilevel-model"><i class="fa fa-check"></i><b>2.1</b> Multilevel model</a></li>
+<li class="chapter" data-level="2.2" data-path="methodology.html"><a href="methodology.html#the-multilevel-linear-regression-model"><i class="fa fa-check"></i><b>2.2</b> The multilevel linear regression model</a></li>
+<li class="chapter" data-level="2.3" data-path="methodology.html"><a href="methodology.html#the-multilevel-logistic-regression-model"><i class="fa fa-check"></i><b>2.3</b> The multilevel logistic regression model</a></li>
+<li class="chapter" data-level="2.4" data-path="methodology.html"><a href="methodology.html#parameter-estimation-in-multilevel-logistic-regression-model"><i class="fa fa-check"></i><b>2.4</b> Parameter estimation in multilevel logistic regression model</a></li>
+<li class="chapter" data-level="2.5" data-path="methodology.html"><a href="methodology.html#penalized-quasi-likelihood"><i class="fa fa-check"></i><b>2.5</b> Penalized quasi-likelihood</a></li>
+<li class="chapter" data-level="2.6" data-path="methodology.html"><a href="methodology.html#adaptive-gaussian-quadrature"><i class="fa fa-check"></i><b>2.6</b> Adaptive Gaussian quadrature</a></li>
+<li class="chapter" data-level="2.7" data-path="methodology.html"><a href="methodology.html#laplace-approximation"><i class="fa fa-check"></i><b>2.7</b> Laplace approximation</a></li>
+<li class="chapter" data-level="2.8" data-path="methodology.html"><a href="methodology.html#confidence-interval-of-the-estimates"><i class="fa fa-check"></i><b>2.8</b> Confidence interval of the estimates</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="methodology.html"><a href="methodology.html#wald-type-confidence-interval"><i class="fa fa-check"></i><b>2.8.1</b> Wald-type confidence interval</a></li>
+<li class="chapter" data-level="2.8.2" data-path="methodology.html"><a href="methodology.html#profile-likelihood-confidence-interval"><i class="fa fa-check"></i><b>2.8.2</b> Profile likelihood confidence interval</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="simulation.html"><a href="simulation.html"><i class="fa fa-check"></i><b>3</b> Simulation and analysis techniques</a><ul>
+<li class="chapter" data-level="3.1" data-path="simulation.html"><a href="simulation.html#simulation-model-and-procedure"><i class="fa fa-check"></i><b>3.1</b> Simulation model and procedure</a></li>
+<li class="chapter" data-level="3.2" data-path="simulation.html"><a href="simulation.html#analysis-techniques"><i class="fa fa-check"></i><b>3.2</b> Analysis techniques</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="simulation.html"><a href="simulation.html#percentage-relative-bias"><i class="fa fa-check"></i><b>3.2.1</b> Percentage relative bias</a></li>
+<li class="chapter" data-level="3.2.2" data-path="simulation.html"><a href="simulation.html#non-coverage-rate-of-confidence-interval"><i class="fa fa-check"></i><b>3.2.2</b> Non-coverage rate of confidence interval</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="simulation-results.html"><a href="simulation-results.html"><i class="fa fa-check"></i><b>4</b> The simulation results</a><ul>
+<li class="chapter" data-level="4.1" data-path="simulation-results.html"><a href="simulation-results.html#rate-of-model-convergence"><i class="fa fa-check"></i><b>4.1</b> Rate of model convergence</a></li>
+<li class="chapter" data-level="4.2" data-path="simulation-results.html"><a href="simulation-results.html#the-bias-in-point-estimates"><i class="fa fa-check"></i><b>4.2</b> The bias in point estimates</a></li>
+<li class="chapter" data-level="4.3" data-path="simulation-results.html"><a href="simulation-results.html#non-coverage-of-confidence-interval"><i class="fa fa-check"></i><b>4.3</b> Non-coverage of confidence interval</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="r-codes-used-in-this-study.html"><a href="r-codes-used-in-this-study.html"><i class="fa fa-check"></i><b>A</b> R codes used in this study</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</h1>
+<p class="author"><em>Rasel Biswas</em></p>
+<p class="date"><em>August 2019</em></p>
+<div class="abstract">
+<p class="abstract">Abstract</p>
+<p>In a multilevel framework an important problem is calculating an adequate sample size that generates accurate estimates. Several researches have investigated the behavior of estimates in finite samples, particularly for continuous dependent variables. On the other hand, binary response multilevel models have been investigated less widely. In this research we investigate the sample behavior of estimates in a binary response multilevel model. Particularly, we analyze the influence of different factors on the accuracy of estimates and their profile likelihood confidence intervals for a 2-level logistic regression model, through a Monte Carlo simulation study. We investigate the hypothesis of: (a) different level-1 sample sizes; (b) different level-2 sample sizes; (c) different intra-class correlation coefficients. We investigate the bias of estimates by relative bias and, through a non-coverage indicator, the accuracy of the confidence interval. In all instances we have examined, the point estimates are unbiased (even with very small sample sizes), while the variance components are always underestimated. Despite some exceptions for the variance components, the profile likelihood confidence interval performs very well in all simulated conditions.</p>
+</div>
+</div>
+<div id="intro" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
+<div id="background" class="section level2">
+<h2><span class="header-section-number">1.1</span> Background</h2>
+<p>Most of the statistical inference is based on replicated observations of units of analysis of one type (e.g., a sample of individuals, countries, or schools). The analysis of such observations usually is based on the assumption that either the sampled units themselves or the corresponding residuals in some statistical model are independent and identically distributed. However, many kinds of data, including social surveys, have a hierarchical or clustered structure, which includes units of analysis of more than one type. For instance, in educational research, researchers often study how students’ academic outcomes are associated with the characteristics of their families, classrooms, and schools. The student test scores are frequently modeled as the result of a combination of individual-level characteristics such as student socioeconomic status (SES) and IQ score, classroom level characteristics, such as the number of students in a classroom, and school-level characteristics, such as the expertise of the teachers or location of the school (Urban, Semi-urban or Rural). In this study, pupils, teachers, classrooms, and schools might all be important units of analysis. Frequently, but by no means always, units of analysis of different types are hierarchically nested (e.g., pupils are nested in classrooms, which, in turn, are nested in schools). Other examples involve organizational research, with employees nested within firms; cross-national comparative research with individuals nested within countries; medical research with patients nested within clinics; and longitudinal research with repeated measures nested within individuals.
+Since these analyses include the units of analysis of more than one type, the traditional statistical techniques (i.e., ordinary least squares regression) can not be used in these cases. Multilevel analysis is a general term referring to statistical methods appropriate for the analysis of data sets comprising several types of units of analysis. The levels in the multilevel analysis are another name for the different types of unit of analysis <span class="citation">(Goldstein, 2003)</span>.</p>
+<p>Multilevel analysis, originally developed in the fields of education, sociology, and demography, has received increasing attention in other fields like public health and epidemiology over the past few years. Multilevel analysis has become popular in many fields that have hierarchically organized data in units of analysis at two or more levels. Multilevel analysis can be used either to adjust for the dependency of the observations within clusters by using variables at higher levels, or assessing the impact of higher-level characteristics on the outcome variables after controlling for individual characteristics at a base level <span class="citation">(Snijders &amp; Bosker, 1999)</span>.</p>
+<p>An important problem that occurs in the practice of the multilevel model is the choice of sample sizes at different levels. Applied practitioners designing a research study are often concerned with the required sample size necessary to estimate unbiased fixed effects and variance components, avoid model convergence issues, and yield accurate confidence intervals around point estimates.
+Insufficient sample sizes may lead to biased estimates and/or significance tests with low statistical power <span class="citation">(Hox, 2010)</span>. Since the 1990s, sample size considerations in multilevel studies have become the topic of a huge amount of contributions.
+There are plenty of researches on sample size determination for continuous response multilevel model. However, few studies have been carried out to date that has focused on determining sample sizes for the binary response multilevel model.</p>
+</div>
+<div id="literature" class="section level2">
+<h2><span class="header-section-number">1.2</span> Literature review</h2>
+<p>There is a somewhat wide literature about simulation and studies on this issue for continuous response multilevel models. The robustness issue and the choice of sample size in the multilevel regression model for continuous outcome variable have been studied by several authors <span class="citation">(Akter &amp; Khan, 2018; Clarke &amp; Wheaton, 2007; Hox, 1998; Kreft, 1996; Maas &amp; Hox, 2004, 2005; Mok, 1995)</span>.
+The overall conclusion from these studies is that the estimates of the regression coefficients are nearly unbiased, however, the variance components tend to be biased downward (underestimated) when the number of level 2 units is small (e.g., less than 30) <span class="citation">(Maas &amp; Hox, 2004, 2005)</span>. These simulation studies also indicate that a larger number of groups is more important than a larger number of individuals per group <span class="citation">(Hox, 2010; Maas &amp; Hox, 2004)</span>.
+For two-stage hierarchical linear models, <span class="citation">Akter &amp; Khan (2018)</span> recommend a minimum of 30 groups with 15 units per each group for drawing a valid conclusion about the population.</p>
+<p>However, few studies have assessed the accuracy of estimates, sample size or power analysis in multilevel regression for a binary outcome variable. <span class="citation">Austin (2005)</span> used Monte Carlo simulation methods to examine the impact of misspecification of the distribution of the random effects on estimation of and inference about both the fixed effects and the random effects in multilevel logistic regression models. He concluded that estimation and inference concerning the fixed effects were insensitive to misspecification of the distribution of the random effects, however, estimation and inferences concerning the random effects were affected by model misspecification. <span class="citation">Sastry, Ghosh-Dastidar, Adams, &amp; Pebley (2006)</span> calculate power and sample size in multilevel logistic regression models for their survey of children, families, and communities in Los Angeles. Based on simulation studies, they decided to sample 65 groups each of size 50.</p>
+<p><span class="citation">Moineddin, Matheson, &amp; Glazier (2007)</span> perform some simulation studies on a random slope logistic model using the AGQ with automatic selection of the number of quadrature points as the estimation procedure. Differently from the continuous case, they suggest a ‘‘50/50’’ rule (a minimum of 50 groups with at least 50 units per group) for achieving sufficient accuracy. The estimates of all random components, as well as their standard errors, are underestimated, even with very large sample size. They also investigate how the prevalence of the outcome affects the accuracy of individual-level parameter estimates, finding that group size should be properly adjusted in case of low prevalent outcomes. Furthermore, their results signal some rather low percentages of model convergence in some studies, particularly with low group sizes.</p>
+<p><span class="citation">Paccagnella (2011)</span> found that the regression parameter estimates appear unbiased even with small sample size, while the variance components are underestimated. The bias decreases as the number of groups increases. Like continuous response multilevel models, the accuracy of the standard errors of the regression parameter estimates is achieved with a number of groups equal to 50. Unlike continuous response models, the accuracy of the standard errors of variance estimates needs a very large number of groups.
+The simulation studies of <span class="citation">Moineddin et al. (2007)</span> and <span class="citation">Paccagnella (2011)</span> investigated the effect of sample size based on the asymptotic theory, i.e., they assumed that the sample size is sufficiently large to conduct the significance test. Even though the sample size is large enough, testing a variance component using their standard error is woefully inadequate <span class="citation">(Bates, 2010)</span>.</p>
+</div>
+<div id="motivation-of-the-study" class="section level2">
+<h2><span class="header-section-number">1.3</span> Motivation of the study</h2>
+<p>A Wald-type confidence interval construction is based on the asymptotic normality of the maximum likelihood estimate. It is well known, however, that properties of estimates in small samples can be very different from the asymptotic properties. A more robust construction of confidence interval is profile likelihood-based confidence interval. Profile likelihood works well in both situations when the sample size is small and variance components are to be estimated <span class="citation">(Venzon &amp; Moolgavkar, 1988)</span>.
+However, in most of the studies reviewed in Section <a href="intro.html#literature">1.2</a>, to recommend a minimum sample size for accurate confidence intervals, they examined the accuracy of the Wald-type confidence interval.</p>
+<p>In addition to this, a recent simulation study of <span class="citation">Handayani, Notodiputro, Sadik, &amp; Kurnia (2017)</span> show that for obtaining maximum likelihood estimates in generalized linear mixed models, the Laplace approximation method produces better estimates when compared to penalized quasi-likelihood (PQL) and adaptive Gaussian quadrature (AGQ) approximation methods in terms of their relative biases and mean square errors.</p>
+<p>We are unaware of any simulation studies to date that have investigated the impact of sample sizes on the accuracy of parameter estimates and their profile likelihood confidence intervals, using Laplace approximation estimation procedure, for a two-level logistic regression model.</p>
+</div>
+<div id="objectives-of-the-study" class="section level2">
+<h2><span class="header-section-number">1.4</span> Objectives of the study</h2>
+<p>This study focuses on the impact of sample sizes on the accuracy of parameter estimates (fixed effects and variance components) and their profile likelihood confidence intervals.
+The accuracy of the parameter estimates is assessed by the percentage relative bias. The accuracy of the confidence interval, for each parameter, is examined by analyzing the observed coverage of the <span class="math inline">\(95\%\)</span> confidence interval.
+Based on the findings, this simulation study attempts to recommend the minimum sample size necessary to estimate unbiased fixed effects and variance components, avoid model convergence issues, and yield accurate confidence intervals around point estimates for a two-level logistic regression model.</p>
+</div>
+<div id="organization-of-the-study" class="section level2">
+<h2><span class="header-section-number">1.5</span> Organization of the study</h2>
+<p>The organization of this project is as follows. Chapter <a href="intro.html#intro">1</a> contains the background, reviews of the literature, and objectives. Chapter <a href="methodology.html#methodology">2</a> describes multilevel logistic regression model, parameter estimation techniques, and steps to construct profile likelihood confidence interval. In Chapter <a href="simulation.html#simulation">3</a>, Simulation model and simulation process are described, as well as the analysis techniques are discussed. Chapter <a href="simulation-results.html#simulation-results">4</a> provides the simulation results. Finally, Chapter <a href="conclusion.html#conclusion">5</a> summarizes the project work and conclude our objectives and results.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="methodology.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+---
+title: "The Birthday Paradox"
+author: "Rasel Biswas"
+date: '2020-05-04'
+categories: []
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+lastmod: '2020-05-04T15:53:32+06:00'
+projects: []
+slug: the-birthday-paradox
+subtitle: ''
+summary: ''
+tags:
+- Paradox
+- Probability
+authors: []
+math: true
+---
+
+
+
+<p>Let’s begin with a simple question.</p>
+<blockquote>
+<p>If 50 students are admitted to ISRT each year, what is the probability that at least 2 of them have the same birthday, that is, they can share the same birthday cake? Pause for a moment and guess the probability.</p>
+</blockquote>
+<p>The answer is <span class="math inline">\(97\%\)</span>. Yes, you read that right, <span class="math inline">\(97\%\)</span> or <span class="math inline">\(0.97\)</span> is the probability that at least <span class="math inline">\(2\)</span> people out of <span class="math inline">\(50\)</span> share a birthday.</p>
+<p>-Seems impossible, doesn’t it? How can the probability be that high? That was certainly my reaction when I first heard about the Birthday Paradox (as it has come to be known). If you ask people to guess the probability, they tend to go for ‘<span class="math inline">\(50\)</span> divided by <span class="math inline">\(365\)</span>’, or possibly a slightly higher probability. But hardly anyone guesses as high as <span class="math inline">\(97\%\)</span>.</p>
+<p>There are different ways of explaining it, and many versions can be found on the internet. But here’s a simple way to understand it.</p>
+<ul>
+<li><p>Imagine, you’re the first person in a room. Then a second person comes in. The probability that the person shares your birthday is <span class="math inline">\(1/365\)</span> (let’s forget about leap years for now).</p></li>
+<li><p>A third person enters. The probability that the third person shares your birthday is also <span class="math inline">\(1/365\)</span>. So the probability that either of those two people share your birthday is <span class="math inline">\(2/365\)</span>.</p></li>
+<li><p>BUT, this is where you tend to forget about - there is also a chance that the second and third people will share each other’s birthday. So the probability of a shared birthday is slightly higher than you thought at first. Think of the possible links - the possibilities of a shared birthday - as the three sides of a triangle.</p></li>
+<li><p>Then a fourth person enters the room. The possible links are now the four sides of a square, plus the two diagonals (so totally <span class="math inline">\(6\)</span> links). A fifth person gives you a five-sided shape - join all its points to each other and you’ll get <span class="math inline">\(10\)</span> links. See how the numbers are starting to grow!</p></li>
+<li><p>By the time you reach <span class="math inline">\(50\)</span> people, there are <span class="math inline">\(1,225\)</span> possible links (since, <span class="math inline">\({50 \choose 2}=1225\)</span>). You can find the exact math on the internet, but see all of a sudden that high probability instinctively feels right, doesn’t it?</p></li>
+</ul>
+<p>In short, the exact math is:</p>
+<p>Probability (at least one matched pair)<span class="math inline">\(=1\)</span> - Probability (no matched pair out of 1,225 pairs)
+<span class="math display">\[
+=1-(364 / 365)^{1225}=0.965
+\]</span></p>
+<p>Other Interesting things you can relate now are:</p>
+<ol style="list-style-type: decimal">
+<li><p>Once you have only <span class="math inline">\(23\)</span> people there is a <span class="math inline">\(50\%\)</span> chance of a shared birthday.</p></li>
+<li><p>If you get to <span class="math inline">\(30\)</span> people, then there is a <span class="math inline">\(70\%\)</span> chance of a shared birthday.</p></li>
+<li><p>And, in a room of <span class="math inline">\(75\)</span>, there is a <span class="math inline">\(99.9\%\)</span> chance of at least two having the same birthday.</p></li>
+</ol>
+<p>One of the best demonstrations of this paradox (of <span class="math inline">\(23\)</span> people) was at the <span class="math inline">\(2014\)</span> FIFA World Cup. Someone analyzed the <span class="math inline">\(32\)</span> teams (all containing <span class="math inline">\(23\)</span> players, remember), and found that in <span class="math inline">\(16\)</span> teams there were at least two players with the same birthday.</p>
+<p>One important thing is that the birthday paradox isn’t a logical paradox since there’s nothing self-contradictory about it, it’s just unexpected at first sight.</p>
+<p>So next time you’re in a classroom, at a party, or playing cricket or football, conduct your own experiment.</p>
+<div id="did-you-find-this-page-helpful-consider-sharing-it" class="section level3">
+<h3>Did you find this page helpful? Consider sharing it</h3>
+</div>

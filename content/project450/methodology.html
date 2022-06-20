@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Methodology | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</title>
+  <meta name="description" content="Chapter 2 Methodology | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Methodology | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Methodology | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  
+  
+  
+
+<meta name="author" content="Rasel Biswas" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="simulation.html"/>
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#background"><i class="fa fa-check"></i><b>1.1</b> Background</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#literature"><i class="fa fa-check"></i><b>1.2</b> Literature review</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#motivation-of-the-study"><i class="fa fa-check"></i><b>1.3</b> Motivation of the study</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#objectives-of-the-study"><i class="fa fa-check"></i><b>1.4</b> Objectives of the study</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#organization-of-the-study"><i class="fa fa-check"></i><b>1.5</b> Organization of the study</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>2</b> Methodology</a><ul>
+<li class="chapter" data-level="2.1" data-path="methodology.html"><a href="methodology.html#multilevel-model"><i class="fa fa-check"></i><b>2.1</b> Multilevel model</a></li>
+<li class="chapter" data-level="2.2" data-path="methodology.html"><a href="methodology.html#the-multilevel-linear-regression-model"><i class="fa fa-check"></i><b>2.2</b> The multilevel linear regression model</a></li>
+<li class="chapter" data-level="2.3" data-path="methodology.html"><a href="methodology.html#the-multilevel-logistic-regression-model"><i class="fa fa-check"></i><b>2.3</b> The multilevel logistic regression model</a></li>
+<li class="chapter" data-level="2.4" data-path="methodology.html"><a href="methodology.html#parameter-estimation-in-multilevel-logistic-regression-model"><i class="fa fa-check"></i><b>2.4</b> Parameter estimation in multilevel logistic regression model</a></li>
+<li class="chapter" data-level="2.5" data-path="methodology.html"><a href="methodology.html#penalized-quasi-likelihood"><i class="fa fa-check"></i><b>2.5</b> Penalized quasi-likelihood</a></li>
+<li class="chapter" data-level="2.6" data-path="methodology.html"><a href="methodology.html#adaptive-gaussian-quadrature"><i class="fa fa-check"></i><b>2.6</b> Adaptive Gaussian quadrature</a></li>
+<li class="chapter" data-level="2.7" data-path="methodology.html"><a href="methodology.html#laplace-approximation"><i class="fa fa-check"></i><b>2.7</b> Laplace approximation</a></li>
+<li class="chapter" data-level="2.8" data-path="methodology.html"><a href="methodology.html#confidence-interval-of-the-estimates"><i class="fa fa-check"></i><b>2.8</b> Confidence interval of the estimates</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="methodology.html"><a href="methodology.html#wald-type-confidence-interval"><i class="fa fa-check"></i><b>2.8.1</b> Wald-type confidence interval</a></li>
+<li class="chapter" data-level="2.8.2" data-path="methodology.html"><a href="methodology.html#profile-likelihood-confidence-interval"><i class="fa fa-check"></i><b>2.8.2</b> Profile likelihood confidence interval</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="simulation.html"><a href="simulation.html"><i class="fa fa-check"></i><b>3</b> Simulation and analysis techniques</a><ul>
+<li class="chapter" data-level="3.1" data-path="simulation.html"><a href="simulation.html#simulation-model-and-procedure"><i class="fa fa-check"></i><b>3.1</b> Simulation model and procedure</a></li>
+<li class="chapter" data-level="3.2" data-path="simulation.html"><a href="simulation.html#analysis-techniques"><i class="fa fa-check"></i><b>3.2</b> Analysis techniques</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="simulation.html"><a href="simulation.html#percentage-relative-bias"><i class="fa fa-check"></i><b>3.2.1</b> Percentage relative bias</a></li>
+<li class="chapter" data-level="3.2.2" data-path="simulation.html"><a href="simulation.html#non-coverage-rate-of-confidence-interval"><i class="fa fa-check"></i><b>3.2.2</b> Non-coverage rate of confidence interval</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="simulation-results.html"><a href="simulation-results.html"><i class="fa fa-check"></i><b>4</b> The simulation results</a><ul>
+<li class="chapter" data-level="4.1" data-path="simulation-results.html"><a href="simulation-results.html#rate-of-model-convergence"><i class="fa fa-check"></i><b>4.1</b> Rate of model convergence</a></li>
+<li class="chapter" data-level="4.2" data-path="simulation-results.html"><a href="simulation-results.html#the-bias-in-point-estimates"><i class="fa fa-check"></i><b>4.2</b> The bias in point estimates</a></li>
+<li class="chapter" data-level="4.3" data-path="simulation-results.html"><a href="simulation-results.html#non-coverage-of-confidence-interval"><i class="fa fa-check"></i><b>4.3</b> Non-coverage of confidence interval</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="r-codes-used-in-this-study.html"><a href="r-codes-used-in-this-study.html"><i class="fa fa-check"></i><b>A</b> R codes used in this study</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="methodology" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Methodology</h1>
+<div id="multilevel-model" class="section level2">
+<h2><span class="header-section-number">2.1</span> Multilevel model</h2>
+<p>Multilevel models (also known as hierarchical linear models, linear mixed-effects models, mixed models, nested data models, random coefficient, random-effects models, random parameter models, or split-plot designs) are statistical models of parameters that vary at more than one level <span class="citation">(Raudenbush &amp; Bryk, 2002)</span>. Multilevel models are appropriate particularly for research designs where data for the individuals are organized at more than one level (i.e., nested data or grouped data). Multilevel models can be used on data with many levels, although two-level models are the most common. In a two-level model, the units of analysis are usually individuals (at a lower level) who are nested within contextual/aggregate units, sometimes called cluster or group (at a higher level). This project deals only with two-level models.</p>
+</div>
+<div id="the-multilevel-linear-regression-model" class="section level2">
+<h2><span class="header-section-number">2.2</span> The multilevel linear regression model</h2>
+<p>Assume that we have data from J groups, with different numbers of individuals, <span class="math inline">\(n_j\)</span>, in each group. Let, <span class="math inline">\(Y_{i j}\)</span> denote a continuous outcome variable on the <span class="math inline">\(i^{th}\)</span> individual in the <span class="math inline">\(j^{th}\)</span> group. Also, assume that we have one explanatory variable <span class="math inline">\(X_{i j}\)</span> on the individual level (level-1), and one explanatory variable <span class="math inline">\(Z_j\)</span> on the group-level (level-2).</p>
+<p>In order to model the data, we consider a two-level linear regression model with one explanatory variable at each level. The model is as follows:
+<span class="math display" id="eq:linear-model">\[\begin{equation} 
+Y_{i j}=\beta_{0 j}+\beta_{1 j} X_{i j}+e_{i j},
+\tag{2.1}
+\end{equation}\]</span>
+where <span class="math inline">\(\beta_{0 j}\)</span> is the group specific intercept, <span class="math inline">\(\beta_{1 j}\)</span> is the group specific effect of the individual level variable <span class="math inline">\(X_{i j}\)</span>, and <span class="math inline">\(e_{ij}\)</span> are the individual level residuals.
+The variation of the group specific regression coefficients <span class="math inline">\(\beta_{0 j}\)</span> and <span class="math inline">\(\beta_{1 j}\)</span> are modeled as a function of group level (or higher level) variables as follows:
+<span class="math display" id="eq:beta">\[\begin{equation} 
+\begin{array}{l}
+{\beta_{0 j}=\gamma_{00}+\gamma_{01} Z_{j}+u_{0 j}}, \\
+{\beta_{1 j}=\gamma_{10}+\gamma_{11} Z_{j}+u_{1 j}}, \\
+\end{array}
+\tag{2.2}
+\end{equation}\]</span>
+where <span class="math inline">\(\gamma_{00}\)</span> is the common intercept across groups, <span class="math inline">\(\gamma_{01}\)</span> is the effect of the group level predictor on the group-specific intercepts, <span class="math inline">\(\gamma_{10}\)</span> is the common slope associated with the individual level variable across groups, and <span class="math inline">\(\gamma_{11}\)</span> is the group level predictor on the group-specific slopes. The individual-level residuals <span class="math inline">\(e_{ij}\)</span> are assumed to have a normal distribution with mean zero and variance <span class="math inline">\(\sigma^2_e\)</span>. The group-level residuals <span class="math inline">\(u_{0j}\)</span> and <span class="math inline">\(u_{1j}\)</span> are assumed to have a multivariate normal distribution with expectation zero, and to be independent from the residual errors <span class="math inline">\(e_{ij}\)</span>. the variances of the residual errors <span class="math inline">\(u_{0j}\)</span> and <span class="math inline">\(u_{1j}\)</span> are specified as <span class="math inline">\(\sigma_{u0}^{2}\)</span> and <span class="math inline">\(\sigma_{u1}^{2}\)</span>. That is,
+<span class="math display">\[
+e_{ij} \sim N(0,\sigma^2_e),
+\]</span>
+and
+<span class="math display">\[
+\left[\begin{array}{l}{u_{0 j}} \\
+{u_{1 j}}\end{array}\right] \sim N\left(\left[\begin{array}{l}{0} \\
+{0}\end{array}\right],\left[\begin{array}{cc}{\sigma_{u0}^{2}} &amp; {\sigma_{01}} \\ {\sigma_{01}} &amp; {\sigma_{u1}^{2}}\end{array}\right]\right).
+\]</span>
+This model can be written as one single regression model by substituting Equations <a href="methodology.html#eq:beta">(2.2)</a> into the Equation <a href="methodology.html#eq:linear-model">(2.1)</a>. After substituting and rearranging terms the model becomes as follows:
+<span class="math display" id="eq:linear-single">\[\begin{equation} 
+Y_{i j}=\gamma_{00}+\gamma_{10} X_{i j}+\gamma_{01} Z_{j}+\gamma_{11} X_{i j} Z_{j}+u_{0 j}+u_{1 j} X_{i j}+e_{i j}.
+\tag{2.3}
+\end{equation}\]</span></p>
+</div>
+<div id="the-multilevel-logistic-regression-model" class="section level2">
+<h2><span class="header-section-number">2.3</span> The multilevel logistic regression model</h2>
+<p>Let <span class="math inline">\(Y_{i j}\)</span> denote a binary outcome variable, coded 0 or 1, on the <span class="math inline">\(i^{th}\)</span> individual in the <span class="math inline">\(j^{th}\)</span> group. Also <span class="math inline">\(p_{i j}\)</span> be the probability that the outcome variable equals 1, i.e., <span class="math inline">\(p_{i j}\)</span> is the probability that the <span class="math inline">\(i^{th}\)</span> individual in <span class="math inline">\(j^{th}\)</span> group will experience the outcome. Here <span class="math inline">\(Y_{i j}\)</span> follows a Bernoulli distribution. Then in order to model the data, <span class="math inline">\(p_{i j}\)</span> is modeled using the link function, ‘logit’.
+So for the binary outcome variable the model is as follows:
+<span class="math display" id="eq:logistic-model">\[\begin{equation} 
+{\operatorname{logit}\left(p_{i j}\right)=\pi_{0 j}+\pi_{1 j} X_{i j}}, \\
+\tag{2.4}
+\end{equation}\]</span>
+where <span class="math inline">\(\pi_{0 j}\)</span> is the group specific intercept, and <span class="math inline">\(\pi_{1 j}\)</span> is the group specific effect of the individual level variable <span class="math inline">\(X_{i j}\)</span>.
+The variation of the group specific regression coefficients are modeled as a function of group level (or higher level) variables as follows:
+<span class="math display">\[\begin{equation} 
+\begin{array}{l}
+{\pi_{0 j}=\gamma_{00}+\gamma_{01} Z_{j}+u_{0 j}}, \\
+{\pi_{1 j}=\gamma_{10}+\gamma_{11} Z_{j}+u_{1 j}},
+\end{array}
+\end{equation}\]</span>
+where
+<span class="math display">\[
+\left[\begin{array}{l}{u_{0 j}} \\
+{u_{1 j}}\end{array}\right] \sim N\left(\left[\begin{array}{l}{0} \\
+{0}\end{array}\right],\left[\begin{array}{cc}{\sigma_{u0}^{2}} &amp; {\sigma_{01}} \\ {\sigma_{01}} &amp; {\sigma_{u1}^{2}}\end{array}\right]\right).
+\]</span></p>
+<p>The Model <a href="methodology.html#eq:logistic-model">(2.4)</a> can be rewritten as the following single equation:
+<span class="math display" id="eq:logistic-single">\[\begin{equation} 
+\operatorname{logit}\left(p_{i j}\right)=\gamma_{00}+\gamma_{10} X_{i j}+\gamma_{01} Z_{j}+\gamma_{11} X_{i j} Z_{j}+u_{0 j}+u_{1 j} X_{i j}.
+\tag{2.5}
+\end{equation}\]</span></p>
+<p>Equation <a href="methodology.html#eq:logistic-single">(2.5)</a> consists of two parts. The segment <span class="math inline">\(\gamma_{00}+\gamma_{10} X_{i j}+\gamma_{01} Z_{j}+\gamma_{11} X_{i j} Z_{j}\)</span> contains all the fixed coefficients; it is called the fixed effect (or deterministic) part of the model. The segment <span class="math inline">\(u_{0 j}+u_{1 j} X_{i j}\)</span> is called the random (or stochastic) part of the model because it contains all the random error terms.
+Even if the analysis includes only the individual level variable, standard multivariate models are not appropriate for the grouped data since grouped data violate a crucial assumption of the independence of all observations. <strong>Intra-class correlation (ICC)</strong> is used as a mean to quantify the amount of dependence caused by grouping. ICC represents the proportion of the total observed individual variation in the outcome that can be explained by the grouping structure in the population. In other words, ICC = 0 indicates perfect independence of residuals: the observations do not depend on the group membership. On the contrary, ICC = 1 indicates perfect interdependence of residuals: the observations only vary between groups <span class="citation">(Sommet &amp; Morselli, 2017)</span>. When the ICC is not different from zero or negligible, one could consider running traditional one-level regression analysis rather than multilevel regression. The intraclass correlation can also be interpreted as the expected correlation between two randomly drawn units that are in the same group.</p>
+<p>The Intra-class correlation (ICC) can be estimated by specifying a fully unconditional multilevel logistic model:
+<span class="math display">\[\begin{equation} 
+\operatorname{logit}\left(p_{i j}\right)=\gamma_{00} + u_{0 j}.
+\end{equation}\]</span>
+The ICC for the logistic regression model is defined as
+<span class="math display">\[\begin{equation}
+\rho=\frac{\sigma_{u0}^{2}}{\sigma_{u0}^{2}+\sigma_{e}^{2}},
+\end{equation}\]</span>
+where <span class="math inline">\(\sigma_{u0}^{2}\)</span> is the variance of the random intercept in the fully unconditional model and <span class="math inline">\(\sigma^{2}_e\)</span> is the variance of the residuals on the first level.
+However, for logistic regression, there is no direct estimation of the variance of the residuals <span class="math inline">\(\sigma^{2}_e\)</span> on the first level.
+Among different procedures, ‘latent variable approach’ has become the most widely used procedure for computing ICC in a multilevel logistic model. In this approach, the observed binary response is considered to represent a thresholded continuous variable where we observe 0, when the value of the latent variable is below the threshold, and 1 otherwise (e.g., pass/fail on a test is a binary representation of an underlying continuous latent variable test score where the threshold is the pass mark). In a ‘logit’ model, the underlying latent variable has a logistic distribution. We know that the logistic distribution has variance <span class="math inline">\(\frac{\pi^{2}}{3}\)</span>. We can then take this as the level 1 variance so that now both the level 1 and 2 variances are on the same scale since the level 2 variance is measured on the logistic scale <span class="citation">(Guo &amp; Zhao, 2000)</span>.</p>
+</div>
+<div id="parameter-estimation-in-multilevel-logistic-regression-model" class="section level2">
+<h2><span class="header-section-number">2.4</span> Parameter estimation in multilevel logistic regression model</h2>
+<p>From previous description recall that, the number of groups in our data is <span class="math inline">\(J\)</span>, and <span class="math inline">\(n_j\)</span> is the number of observations within the <span class="math inline">\(j^{th}\)</span> group. Now suppose that the number of regressors in our analysis is <span class="math inline">\(p\)</span> (including the intercept) and there are <span class="math inline">\(r\)</span> random effects where <span class="math inline">\(p \geq r\)</span>.
+Then the multilevel linear regression model in Equation <a href="methodology.html#eq:linear-single">(2.3)</a>, for the <span class="math inline">\(j^{th}\)</span> group, can be written as:
+<span class="math display">\[\begin{equation}
+\mathbf{Y}_{j}=\mathbf{X}_{j} \boldsymbol{\beta}+\mathbf{Z}_{j} \mathbf{u}_{j}+\boldsymbol{\varepsilon}_{j},
+\end{equation}\]</span>
+where <span class="math inline">\(\mathbf{Y}_{j}\)</span> is an <span class="math inline">\(n_{j} \times 1\)</span> vector of responses for group <span class="math inline">\(j\)</span>,
+<span class="math inline">\(\mathbf{X}_{j}\)</span> is an <span class="math inline">\(n_{j} \times p\)</span> design matrix for the regressors in group <span class="math inline">\(j\)</span> ,
+<span class="math inline">\(\boldsymbol{\beta}\)</span> is a <span class="math inline">\(p \times 1\)</span> vector of unknown fixed effects coefficients,
+<span class="math inline">\(\mathbf{Z}_{j}\)</span> is an <span class="math inline">\(n_{j} \times r\)</span> design matrix for the random effects of group <span class="math inline">\(j\)</span>,
+<span class="math inline">\(\mathbf{u}_{j}\)</span> is a <span class="math inline">\(r \times 1\)</span> vector of unknown random effects for group <span class="math inline">\(j\)</span> where <span class="math inline">\(\mathbf{u}_{j} \sim M V N(\mathbf{0}, \mathbf{D})\)</span>,
+<span class="math inline">\(\boldsymbol{\varepsilon}_{j}\)</span> is a vector of unobserved errors of the observations in group <span class="math inline">\(j\)</span> where
+<span class="math inline">\(\boldsymbol{\varepsilon}_{j}\sim M V N\left(\mathbf{0}, \mathbf{R}_{j}\right)\)</span> and <span class="math inline">\(\operatorname{Cov}\left(\mathbf{u}_{j}, \boldsymbol{\varepsilon}_{j}\right)=\mathbf{0}\)</span>.</p>
+<p>In the multilevel logistic regression model, the probability of outcome variable <span class="math inline">\({Y}_{j}\)</span>, conditional on the group-specific effects <span class="math inline">\({u}_{j}\)</span>, can be written as
+<span class="math display">\[\begin{equation}
+P\left(\mathbf{Y}_{j}=1 | \mathbf{u}_{j}\right)=\frac{\exp \left(\mathbf{X}_{j} \boldsymbol{\beta}+\mathbf{Z}_{j} \mathbf{u}_{j}\right)}{1+\exp \left(\mathbf{X}_{j} \mathbf{\beta}+\mathbf{Z}_{j} \mathbf{u}_{j}\right)},
+\end{equation}\]</span>
+or as
+<span class="math display">\[\begin{equation}
+P\left(\mathbf{Y}_{j}=0 | \mathbf{u}_{j}\right)=\frac{1}{1+\exp \left(\mathbf{X}_{j} \boldsymbol{\beta}+\mathbf{Z}_{j} \mathbf{u}_{j}\right)}.
+\end{equation}\]</span>
+We assume that responses in each group are independent after conditioning on the random effects (i.e., <span class="math inline">\(\mathbf{R}_{j}=\sigma^{2} \mathbf{I} )\)</span>. Then the conditional probability of <span class="math inline">\(\mathbf{Y}_{j}\)</span> can be written as
+<span class="math display">\[\begin{equation}
+f\left(\mathbf{Y}_{j} | \mathbf{u}_{j} ; \boldsymbol{\beta}\right)=\prod_{i=1}^{n_{j}} P\left(Y_{i j}=1 | \mathbf{u}_{j}\right)^{Y_{i j}} P\left(Y_{i j}=0 | \mathbf{u}_{j}\right)^{1-Y_{i j}},
+\end{equation}\]</span>
+where <span class="math inline">\(i\)</span> is an index for individuals within clusters, i.e., <span class="math inline">\(Y_{ij}\)</span> is the <span class="math inline">\(i^{th}\)</span> individual within the <span class="math inline">\(j^{th}\)</span> group.
+Because the random effects are unobserved, inferences for the fixed effects <span class="math inline">\(\boldsymbol{\beta}\)</span> and the covariance matrix of the random effects <span class="math inline">\(\mathbf{D}\)</span> are estimated by integrating over the random effects, <span class="math inline">\(\mathbf{u}_{j} .\)</span> The result is the ‘marginal likelihood function’ which is written as
+<span class="math display" id="eq:likelihood">\[\begin{equation}
+L(\boldsymbol{\beta}, \mathbf{D})=\prod_{j=1}^{J} \int f\left(\mathbf{y}_{j} | \mathbf{u}_{j} ; \boldsymbol{\beta}\right) r\left(\mathbf{u}_{j} ; \mathbf{D}\right) \mathrm{d} \mathbf{u}_{j},
+\tag{2.6}
+\end{equation}\]</span>
+where <span class="math inline">\(r\left(\mathbf{u}_{j} ; \mathbf{D}\right)\)</span> is a probability distribution of <span class="math inline">\(\mathbf{u}_{j}\)</span>.</p>
+<p>So, the expression for the marginal likelihood of a multilevel model is an integral over the random effects space. The calculation involves high dimensional integrals. For a linear multilevel model, this integral can be evaluated exactly. For a generalized linear multilevel model the integral must be approximated since unlike the linear multilevel model, the likelihood does not have a closed-form solution because of the inherent non-linearity of the model <span class="citation">(McNeish, 2016)</span>.
+This leaves researchers with two broad approaches to estimate the model
+(1) linearly approximate the model so that the likelihood function does have a closed-form (e.g., penalized quasi-likelihood) or (2) retain the non-linearity of the model and approximate the likelihood function (e.g., Gaussian quadrature, Laplace approximation).</p>
+<p>The three most common techniques for estimating multilevel logistic models are briefly discussed here:</p>
+</div>
+<div id="penalized-quasi-likelihood" class="section level2">
+<h2><span class="header-section-number">2.5</span> Penalized quasi-likelihood</h2>
+<p>Penalized quasi-likelihood (PQL) approximates the model by linearizing its non-linear components rather than approximating the integral of the likelihood function <span class="citation">(Breslow &amp; Clayton, 1993)</span>. This can be done with a double iterative algorithm.
+At first, the fixed effects <span class="math inline">\((\boldsymbol{\beta})\)</span> and random effects <span class="math inline">\(\left(\mathbf{u}_{j}\right)\)</span> are estimated (either fitting a single-level logistic regression model or the estimates can be user specified). These initial estimated values are referred to as <span class="math inline">\(\tilde{\boldsymbol{\beta}}\)</span> and <span class="math inline">\(\tilde{\mathbf{u}}_{j}\)</span>. Then, conditional on the estimates of <span class="math inline">\(\boldsymbol{\beta}\)</span> and <span class="math inline">\(\mathbf{u}_{j},\)</span> the variance components <span class="math inline">\(\left(\mathbf{D} \text { and } \mathbf{R}_{j}\right)\)</span> are estimated. Then, based on the estimates of <span class="math inline">\(\mathbf{D}\)</span> and <span class="math inline">\(\mathbf{R}_{j}\)</span>, <span class="math inline">\(\boldsymbol{\beta}\)</span> and <span class="math inline">\(\mathbf{u}_{j}\)</span> are updated and the cycle continues until the differences between the estimates between two successive iterations are sufficiently small <span class="citation">(Goldstein &amp; Rasbash, 1996)</span>.</p>
+<p>A basic advantage of PQL over other computational methods for multilevel logistic models is its computational efficiency. In terms of computational speed, PQL is often the most efficient relative to other estimation methods. Therefore, PQL estimation is sometimes advocated as a starting value for other procedures and for exploratory reasons. Another advantage is that for complex models (e.g., having a large number of random effects and/or multiple hierarchies) the model may still be estimated by PQL, while other estimation methods fail. However, one big disadvantage of this method is the parameter estimated from PQL are negatively biased <span class="citation">(Breslow &amp; Lin, 1995)</span>.</p>
+</div>
+<div id="adaptive-gaussian-quadrature" class="section level2">
+<h2><span class="header-section-number">2.6</span> Adaptive Gaussian quadrature</h2>
+<p>Gaussian quadrature (GQ) is a numerical approximation method that partitions the marginal likelihood function from Equation @ref{eq:likelihood) into multiple components and then evaluates the integral by a weighted sum over the component partitions. As more quadrature points are selected, the approximation becomes more accurate. In traditional GQ, the quadrature points are centered around zero. Adaptive Gaussian quadrature (AGQ) centers the quadrature points about the mode of the marginal likelihood function which is especially advantageous when the mode is distant from zero <span class="citation">(Lesaffre &amp; Spiessens, 2001)</span>.</p>
+<p>In AGQ method, the approximate ‘marginal likelihood’ is calculated by
+<span class="math display">\[\begin{equation} 
+L(\boldsymbol{\beta}, \mathbf{D}) \approx \prod_{j=1}^{J} \sum_{q=1}^{Q} f\left(\mathbf{Y}_{j} | \mathbf{u}_{j}=v_{q}\right) w_{q},
+\end{equation}\]</span>
+where Q is the number of quadrature points (which are user selected), so the number of partitions is <span class="math inline">\(Q+1\)</span>, <span class="math inline">\(v_{q}\)</span> is the <span class="math inline">\(q^{th}\)</span> evaluation point and <span class="math inline">\(w_{q}\)</span> is the related weight <span class="citation">(Fitzmaurice, Laird, &amp; Ware, 2011)</span>.
+One main disadvantage of AGQ is the computational burden since the number of computations increases exponentially as the number of random effects increases.</p>
+</div>
+<div id="laplace-approximation" class="section level2">
+<h2><span class="header-section-number">2.7</span> Laplace approximation</h2>
+<p>Another approach is the Laplace approximation. The goal of the Laplace approximation is to provide an approximation for the marginal likelihood function so that integration can be performed. The Laplace approximation uses Taylor series expansions to approximate the integrand rather than computing the integral with numerical methods as with AGQ so that the integral will have a closed-form solution.</p>
+<p>The marginal likelihood function in Equation <a href="methodology.html#eq:likelihood">(2.6)</a> can alternatively been written as
+<span class="math display">\[\begin{equation} 
+L(\boldsymbol{\beta}, \mathbf{D})=(2 \pi)^{-k / 2}|\mathbf{D}|^{-1 / 2} \int \exp \left[h\left(\mathbf{u}_{j}\right)\right] \mathrm{d} \mathbf{u}_{j},
+\end{equation}\]</span>
+where
+<span class="math display">\[\begin{equation} 
+h\left(\mathbf{u}_{j}\right)=\log f\left(\mathbf{Y}_{j} | \mathbf{u}_{j} ; \boldsymbol{\beta}\right)-\frac{1}{2}\left(\mathbf{u}_{j}^{\mathrm{T}} \mathbf{D}^{-1} \mathbf{u}_{j}\right).
+\end{equation}\]</span>
+A second-order Taylor series expansion is applied to <span class="math inline">\(\exp \left[h\left(\mathbf{u}_{j}\right)\right]\)</span> about the mode of <span class="math inline">\(\mathbf{u}_{j}\)</span> (denoted <span class="math inline">\(\mathbf{u}_{j} )\)</span> such that
+<span class="math display">\[\begin{equation} 
+\exp \left[h\left(\mathbf{u}_{j}\right)\right]=\exp \left[h\left(\widetilde{\mathbf{u}}_{j}\right)+\frac{1}{2}\left(\mathbf{u}_{j}-\widetilde{\mathbf{u}}_{j}\right)^{\mathrm{T}} \frac{\partial^{2} h}{\partial \mathbf{u}_{j} \partial \mathbf{u}_{j}^{\mathrm{T}}}\left(\mathbf{u}_{j}-\widetilde{\mathbf{u}}_{j}\right)+K_{j}\right],
+\end{equation}\]</span>
+where <span class="math inline">\(K\)</span> is the remainder which is ignored because it approaches zero as the group size increases. After expansion, the integrand has a closed-form and the integral can be evaluated <span class="citation">(Raudenbush, Yang, &amp; Yosef, 2000)</span>.
+Laplace method yields more accurate fixed and variance component estimates as sample sizes increase, particularly compared to PQL methods <span class="citation">(Breslow &amp; Lin, 1995)</span>.
+Using a single point in AGQ method is equivalent to the Laplace approximation. The number of points greater than 1 produce greater accuracy in the evaluation of the likelihood. However, the larger the number of points, the more computationally intensive (and restrictive) is the estimation procedure.</p>
+</div>
+<div id="confidence-interval-of-the-estimates" class="section level2">
+<h2><span class="header-section-number">2.8</span> Confidence interval of the estimates</h2>
+<div id="wald-type-confidence-interval" class="section level3">
+<h3><span class="header-section-number">2.8.1</span> Wald-type confidence interval</h3>
+<p>The <span class="math inline">\((1-\alpha) \cdot 100\%\)</span> Wald-type confidence interval is found as
+<span class="math display">\[\begin{equation}
+( \hat{\theta} - z_{\alpha /2} \cdot SE( \hat{\theta}),  \hat{\theta} + z_{\alpha /2} \cdot SE( \hat{\theta}) ),   
+\end{equation}\]</span>
+where <span class="math inline">\(\hat{\theta}\)</span> is the estimate of the parameter <span class="math inline">\(\theta\)</span>, and <span class="math inline">\(SE( \hat{\theta}\)</span> is the standard error of the estimate <span class="math inline">\(\hat{\theta}\)</span>. The <span class="math inline">\(z_{\alpha /2}\)</span> is the <span class="math inline">\((1-\alpha/2) \cdot 100\%\)</span> percentile of the standard normal distribution, which is the sampling distribution of the Wald statistic in repeated samples, when the sample size is large.</p>
+</div>
+<div id="profile-likelihood-confidence-interval" class="section level3">
+<h3><span class="header-section-number">2.8.2</span> Profile likelihood confidence interval</h3>
+<p>The main idea of profile likelihood is to invert a likelihood-ratio test to obtain a CI for the parameter in question <span class="citation">(Venzon &amp; Moolgavkar, 1988)</span>. Consider a statistical model with parameters <span class="math inline">\(\theta\)</span> and <span class="math inline">\(\delta\)</span> where <span class="math inline">\(\theta\)</span> is the parameter of interest and <span class="math inline">\(\delta\)</span> is the (vector of) additional parameter(s) in the model. We denote the likelihood function by <span class="math inline">\(L(\theta, \delta)\)</span> , and the maximum likelihood (ML) estimates by <span class="math inline">\(\left(\theta^{*}, \delta^{*}\right)\)</span>.
+For the hypothesis <span class="math inline">\(\mathrm{H}_{0} : \theta=\theta_{0}\)</span> (where <span class="math inline">\(\theta_{0}\)</span> is a fixed value), the likelihood ratio test statistic <span class="math inline">\(\left(G^{2}\right)\)</span> equals the drop in 2 <span class="math inline">\(\ln L\)</span> between the full model and the reduced model with <span class="math inline">\(\theta\)</span> fixed at <span class="math inline">\(\theta_{0},\)</span> i.e.,</p>
+<p><span class="math display">\[\begin{equation}
+G^{2}=2\left(\ln L\left(\theta^{*}, \delta^{*}\right)-\ln L\left(\theta_{0}, \delta_{0}^{*}\right)\right),
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(\delta_{0} *\)</span> is the ML estimate of the reduced model.</p>
+<p>Alternatively, we may express the test statistic <span class="math inline">\(G^2\)</span> in terms of the profile likelihood function <span class="math inline">\(L_{1}\)</span> for the parameter <span class="math inline">\(\theta\)</span> which is obtained from the usual likelihood function by maximizing over the parameter <span class="math inline">\(\delta,\)</span> i.e., <span class="math inline">\(L_{1}(\theta)=\max _{\delta} L(\theta, \delta)\)</span>. Then we have</p>
+<p><span class="math display">\[\begin{equation}
+ G^{2}=2\left(\ln L_{1}\left(\theta^{*}\right)-\ln L_{1}\left(\theta_{0}\right)\right).  
+\end{equation}\]</span></p>
+<p>A 95<span class="math inline">\(\%\)</span> CI for <span class="math inline">\(\theta\)</span> consists of those values of <span class="math inline">\(\theta_{0}\)</span> for which the test is non-significant at significance level <span class="math inline">\(0.05 ;\)</span> this is the case when <span class="math inline">\(G^{2}\)</span> does not exceed <span class="math inline">\(3.84\)</span> (<span class="math inline">\(95\%\)</span>-percentile of the <span class="math inline">\(\chi^{2}(1)\)</span> distribution). Thus, the Confidence Interval consists of the <span class="math inline">\(\theta_{0}\)</span>-values for which
+<span class="math inline">\(G^2 = 2\left(\ln L_{1}\left(\theta^{*}\right)-\ln L_{1}\left(\theta_{0}\right)\right) \leq 3.84\)</span>,
+or, <span class="math inline">\(\ln L_{1}\left(\theta_{0}\right) \geq \ln L\left(\theta^{*}, \delta^{*}\right)-1.92\)</span>.
+For a confidence interval with coverage <span class="math inline">\((1-\alpha) * 100 \%\)</span> , use instead the <span class="math inline">\((1-\alpha)\)</span>-percentile of the <span class="math inline">\(\chi^{2}(1)\)</span> distribution.</p>
+<p>Computation of a profile likelihood confidence interval follows some steps. For simplicity, we consider only the lower bound of the CI (the upper bound is similar) and assume the profile likelihood function to be an increasing function to the left of its maximum. As a start, compute the ML estimates <span class="math inline">\(\left(\theta^*, \delta^{*}\right)\)</span> and the corresponding log-likelihood value. Then proceed by the following steps:</p>
+<ol style="list-style-type: decimal">
+<li><p>Compute a ‘reasonable’ lower bound <span class="math inline">\(\theta^{\prime}\)</span> for the lower confidence limit (e.g., <span class="math inline">\(\theta^{*}-5 \operatorname{SE}\left(\theta^{*}\right),\)</span> or 0.0001 if <span class="math inline">\(\theta\)</span>-values are restricted to be <span class="math inline">\(&gt;\)</span> 0 ).</p></li>
+<li><p>Define a grid of values ranging from <span class="math inline">\(\theta^{\prime}\)</span> to <span class="math inline">\(\theta^{*}\)</span> (e.g., 100 equidistant points).</p></li>
+<li><p>For each grid value <span class="math inline">\(\theta_{i},\)</span> compute the profile log-likelihood value <span class="math inline">\(\ln L_{1}\left(\theta_{i}\right)\)</span> by maximizing the <span class="math inline">\(\ln L\left(\theta_{i}, \delta\right)\)</span> over <span class="math inline">\(\delta\)</span>-values (a standard analysis allowing <span class="math inline">\(\theta\)</span> to be fixed at <span class="math inline">\(\theta_{i}\)</span> may apply).</p></li>
+<li><p>Take as the lower bound <span class="math inline">\(\left(\theta_{\mathrm{L}}\right)\)</span> of the 95<span class="math inline">\(\%\)</span> CI the smallest <span class="math inline">\(\theta_{i}\)</span> -value for which it holds that <span class="math inline">\(\ln L_{1}\left(\theta_{i}\right) \geq \ln L\left(\theta^{*}, \delta^{*}\right)-1.92\)</span>.</p></li>
+<li><p>If necessary, refine or extend the grid of values around <span class="math inline">\(\theta_{\mathrm{L}}\)</span> to obtain greater accuracy.</p></li>
+</ol>
+<p>For repeated computations, one may replace the crude search over a grid of values by a systematic search procedure (e.g., bisection of the interval from <span class="math inline">\(\theta^{\prime}\)</span> to <span class="math inline">\(\theta^{*} )\)</span>.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="simulation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

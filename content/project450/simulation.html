@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Simulation and analysis techniques | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</title>
+  <meta name="description" content="Chapter 3 Simulation and analysis techniques | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Simulation and analysis techniques | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Simulation and analysis techniques | Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model" />
+  
+  
+  
+
+<meta name="author" content="Rasel Biswas" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="methodology.html"/>
+<link rel="next" href="simulation-results.html"/>
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#background"><i class="fa fa-check"></i><b>1.1</b> Background</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#literature"><i class="fa fa-check"></i><b>1.2</b> Literature review</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#motivation-of-the-study"><i class="fa fa-check"></i><b>1.3</b> Motivation of the study</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#objectives-of-the-study"><i class="fa fa-check"></i><b>1.4</b> Objectives of the study</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#organization-of-the-study"><i class="fa fa-check"></i><b>1.5</b> Organization of the study</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>2</b> Methodology</a><ul>
+<li class="chapter" data-level="2.1" data-path="methodology.html"><a href="methodology.html#multilevel-model"><i class="fa fa-check"></i><b>2.1</b> Multilevel model</a></li>
+<li class="chapter" data-level="2.2" data-path="methodology.html"><a href="methodology.html#the-multilevel-linear-regression-model"><i class="fa fa-check"></i><b>2.2</b> The multilevel linear regression model</a></li>
+<li class="chapter" data-level="2.3" data-path="methodology.html"><a href="methodology.html#the-multilevel-logistic-regression-model"><i class="fa fa-check"></i><b>2.3</b> The multilevel logistic regression model</a></li>
+<li class="chapter" data-level="2.4" data-path="methodology.html"><a href="methodology.html#parameter-estimation-in-multilevel-logistic-regression-model"><i class="fa fa-check"></i><b>2.4</b> Parameter estimation in multilevel logistic regression model</a></li>
+<li class="chapter" data-level="2.5" data-path="methodology.html"><a href="methodology.html#penalized-quasi-likelihood"><i class="fa fa-check"></i><b>2.5</b> Penalized quasi-likelihood</a></li>
+<li class="chapter" data-level="2.6" data-path="methodology.html"><a href="methodology.html#adaptive-gaussian-quadrature"><i class="fa fa-check"></i><b>2.6</b> Adaptive Gaussian quadrature</a></li>
+<li class="chapter" data-level="2.7" data-path="methodology.html"><a href="methodology.html#laplace-approximation"><i class="fa fa-check"></i><b>2.7</b> Laplace approximation</a></li>
+<li class="chapter" data-level="2.8" data-path="methodology.html"><a href="methodology.html#confidence-interval-of-the-estimates"><i class="fa fa-check"></i><b>2.8</b> Confidence interval of the estimates</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="methodology.html"><a href="methodology.html#wald-type-confidence-interval"><i class="fa fa-check"></i><b>2.8.1</b> Wald-type confidence interval</a></li>
+<li class="chapter" data-level="2.8.2" data-path="methodology.html"><a href="methodology.html#profile-likelihood-confidence-interval"><i class="fa fa-check"></i><b>2.8.2</b> Profile likelihood confidence interval</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="simulation.html"><a href="simulation.html"><i class="fa fa-check"></i><b>3</b> Simulation and analysis techniques</a><ul>
+<li class="chapter" data-level="3.1" data-path="simulation.html"><a href="simulation.html#simulation-model-and-procedure"><i class="fa fa-check"></i><b>3.1</b> Simulation model and procedure</a></li>
+<li class="chapter" data-level="3.2" data-path="simulation.html"><a href="simulation.html#analysis-techniques"><i class="fa fa-check"></i><b>3.2</b> Analysis techniques</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="simulation.html"><a href="simulation.html#percentage-relative-bias"><i class="fa fa-check"></i><b>3.2.1</b> Percentage relative bias</a></li>
+<li class="chapter" data-level="3.2.2" data-path="simulation.html"><a href="simulation.html#non-coverage-rate-of-confidence-interval"><i class="fa fa-check"></i><b>3.2.2</b> Non-coverage rate of confidence interval</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="simulation-results.html"><a href="simulation-results.html"><i class="fa fa-check"></i><b>4</b> The simulation results</a><ul>
+<li class="chapter" data-level="4.1" data-path="simulation-results.html"><a href="simulation-results.html#rate-of-model-convergence"><i class="fa fa-check"></i><b>4.1</b> Rate of model convergence</a></li>
+<li class="chapter" data-level="4.2" data-path="simulation-results.html"><a href="simulation-results.html#the-bias-in-point-estimates"><i class="fa fa-check"></i><b>4.2</b> The bias in point estimates</a></li>
+<li class="chapter" data-level="4.3" data-path="simulation-results.html"><a href="simulation-results.html#non-coverage-of-confidence-interval"><i class="fa fa-check"></i><b>4.3</b> Non-coverage of confidence interval</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="r-codes-used-in-this-study.html"><a href="r-codes-used-in-this-study.html"><i class="fa fa-check"></i><b>A</b> R codes used in this study</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="simulation" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Simulation and analysis techniques</h1>
+<div id="simulation-model-and-procedure" class="section level2">
+<h2><span class="header-section-number">3.1</span> Simulation model and procedure</h2>
+<p>For this simulation study, we focus on the following two-level model, with one explanatory variable at level 1 (individual level) and one explanatory variable at level 2 (group level):
+<span class="math display">\[\begin{equation} 
+\operatorname{logit}\left(p_{i j}\right)=\gamma_{00}+\gamma_{10} X_{i j}+\gamma_{01} Z_{j}+\gamma_{11} X_{i j} Z_{j}+u_{0 j}+u_{1 j} X_{i j}.
+\label{eqn:simulation_model}
+\end{equation}\]</span>
+The accuracy of the estimates can be affected by the size of the intra-class correlation coefficient (ICC) <span class="citation">(Goldstein, 2003)</span>. Therefore, in our simulation, we have varied not only the sample size at the individual and group level but also the ICC.</p>
+<p>Following the simulation conditions used by <span class="citation">Maas &amp; Hox (2005)</span> and <span class="citation">Moineddin et al. (2007)</span>, we set the following conditions for our simulation study:</p>
+<ol style="list-style-type: decimal">
+<li>the number of groups (<strong><span class="math inline">\(J\)</span></strong>) is set at <span class="math inline">\(30\)</span>, <span class="math inline">\(50\)</span>, and <span class="math inline">\(100\)</span>,</li>
+<li>the number of individuals per group (<strong><span class="math inline">\(n_{j}\)</span></strong>) is set at <span class="math inline">\(5\)</span>, <span class="math inline">\(30,\)</span> and <span class="math inline">\(50,\)</span> and</li>
+<li>the intra-class correlation coefficients <span class="math inline">\((\mathrm{ICC})\)</span> is set at <span class="math inline">\(0.1\)</span>, <span class="math inline">\(0.2,\)</span> and <span class="math inline">\(0.3\)</span>.</li>
+</ol>
+<p>The number of groups is chosen so that the highest number should be sufficient. In practice, <span class="math inline">\(50\)</span> groups is a frequently occurring number in organizational and school research, and <span class="math inline">\(30\)</span> is the smallest acceptable number according to <span class="citation">Maas &amp; Hox (2005)</span>. Similarly, the group sizes are chosen so that the highest number should be sufficient. A group size of <span class="math inline">\(30\)</span> is normal in educational research, and a group size of <span class="math inline">\(5\)</span> is normal in family research and longitudinal research. The three ICCs included in the study span the customary range of ICC found in social, behavioral, and education sciences <span class="citation">(Gulliford, Ukoumunne, &amp; Chinn, 1999)</span>.</p>
+<p>The individual and group explanatory variables <span class="math inline">\(X_{i j}\)</span> and <span class="math inline">\(Z_{j}\)</span> are generated from the standard normal distribution. We set the fixed effect regression coefficients for all simulated models as follows:
+<span class="math inline">\(\gamma_{00}=-1.0\)</span>, <span class="math inline">\(\gamma_{01}=0.3\)</span>, <span class="math inline">\(\gamma_{10}=0.3\)</span>, and <span class="math inline">\(\gamma_{11}=0.3\)</span>.
+The values of the fixed effect regression parameters do not change between models, while the variance <span class="math inline">\(\sigma^2_{u0}\)</span> varies according to the intraclass correlation coefficient, through the relation
+<span class="math display">\[\begin{equation}
+\sigma_{u0}^{2}=\frac{\frac{\pi^{2}}{3} \rho}{1-\rho}.
+\end{equation}\]</span>
+That is, <span class="math inline">\(\sigma_{u0}\)</span> follows from the ICC and <span class="math inline">\(\sigma^2_e\)</span>. The variance of the random slope, <span class="math inline">\(\sigma^2_{u1}\)</span>, is set at 1 in all simulations. To simplify the simulation model, without loss of generality, the group random components <span class="math inline">\(u_{0 j}\)</span> and <span class="math inline">\(u_{1 j}\)</span> are assumed to be independent normal variables.</p>
+<p>Among the three most common approximation methods for maximum likelihood estimation in a multilevel logistic regression model, the Laplace approximation technique is used in this simulation study. The reason behind choosing Laplace approximation instead of adaptive Gaussian quadrature is as follows. The adaptive Gaussian quadrature (AGQ) method produces good approximation when the dimension of random effects is <span class="math inline">\(1\)</span>, however, it starts giving worse results as the dimension of random effects increases. AGQ method is inaccurate if the dimension of random effects is greater than two. This is due to the limitation of the method in factorizing high-dimensional integrals into some integrals with low-dimension. Besides this, In a recent simulation study, <span class="citation">Handayani et al. (2017)</span> found that the Laplace approximation has the best performance (compared to AGQ and PQL) for obtaining maximum likelihood estimates in generalized linear mixed models in terms of their relative biases and mean square errors. Since in our simulation model the dimension of random effects is <span class="math inline">\(2\)</span>, we decide to use the Laplace approximation technique.</p>
+<p>There are <span class="math inline">\(3\times3\times3=27\)</span> conditions. For each condition, we generated <span class="math inline">\(1,000\)</span> simulated data sets. The <strong>R</strong> software (R version 3.6.0) is used for generating the simulated data sets and to estimate the model. Specifically, for the estimation we use the the <code>glmer()</code> function from the <code>lme4</code> package. The absolute value for parameter convergence criterion was set at <span class="math inline">\(1e^{-7}\)</span> and the maximum number of function evaluations was set at <span class="math inline">\(20000\)</span>.</p>
+</div>
+<div id="analysis-techniques" class="section level2">
+<h2><span class="header-section-number">3.2</span> Analysis techniques</h2>
+<div id="percentage-relative-bias" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Percentage relative bias</h3>
+<p>The accuracy of the parameter estimates (fixed effects coefficients and residual variances) is quantified by the percentage relative bias. Let <span class="math inline">\(\hat{\theta}\)</span> stand for the estimate of the population parameter <span class="math inline">\(\theta\)</span>, then <span class="math inline">\(\frac{\hat{\theta}-\theta}{\theta} \times 100\)</span> indicates the percentage relative bias for parameter <span class="math inline">\(\theta\)</span>.</p>
+</div>
+<div id="non-coverage-rate-of-confidence-interval" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Non-coverage rate of confidence interval</h3>
+<p>The accuracy of the confidence interval is assessed by analyzing the observed non-coverage rate of the <span class="math inline">\(95\%\)</span> confidence interval. For each estimated parameter in each simulated dataset, we calculate a non-coverage indicator, which is equal to <span class="math inline">\(0\)</span> when the true value of that parameter lies inside the estimated <span class="math inline">\(95\%\)</span> confidence interval (CI) and <span class="math inline">\(1\)</span> when the true value lies outside this interval. Counting how many times the non-coverage indicator is equal to 1 in each simulation study, we can calculate the overall non-coverage rate and then compare it with the nominal rate of <span class="math inline">\(5\%\)</span>.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="methodology.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="simulation-results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

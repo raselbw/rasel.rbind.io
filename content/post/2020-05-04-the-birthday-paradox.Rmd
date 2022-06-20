@@ -1,0 +1,64 @@
+---
+title: "The Birthday Paradox"
+author: "Rasel Biswas"
+date: '2020-05-04'
+categories: []
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+lastmod: '2020-05-04T15:53:32+06:00'
+projects: []
+slug: the-birthday-paradox
+subtitle: ''
+summary: ''
+tags:
+- Paradox
+- Probability
+authors: []
+math: true
+---
+Let's begin with a simple question.
+
+> If 50 students are admitted to ISRT each year, what is the probability that at least 2 of them have the same birthday, that is, they can share the same birthday cake? Pause for a moment and guess the probability.
+
+The answer is $97\%$. Yes, you read that right, $97\%$ or $0.97$ is the probability that at least $2$ people out of $50$ share a birthday.
+
+-Seems impossible, doesn't it? How can the probability be that high? That was certainly my reaction when I first heard about the Birthday Paradox (as it has come to be known). If you ask people to guess the probability, they tend to go for '$50$ divided by $365$', or possibly a slightly higher probability. But hardly anyone guesses as high as $97\%$.
+
+There are different ways of explaining it, and many versions can be found on the internet. But here's a simple way to understand it.
+
+- Imagine, you're the first person in a room. Then a second person comes in. The probability that the person shares your birthday is $1/365$ (let's forget about leap years for now).
+
+- A third person enters. The probability that the third person shares your birthday is also $1/365$. So the probability that either of those two people share your birthday is $2/365$.
+
+- BUT, this is where you tend to forget about - there is also a chance that the second and third people will share each other's birthday. So the probability of a shared birthday is slightly higher than you thought at first. Think of the possible links - the possibilities of a shared birthday - as the three sides of a triangle.
+
+- Then a fourth person enters the room. The possible links are now the four sides of a square, plus the two diagonals (so totally $6$ links). A fifth person gives you a five-sided shape - join all its points to each other and you'll get $10$ links. See how the numbers are starting to grow!
+
+- By the time you reach $50$ people, there are $1,225$ possible links (since, ${50 \choose 2}=1225$). You can find the exact math on the internet, but see all of a sudden that high probability instinctively feels right, doesn't it?
+
+
+In short, the exact math is:
+
+Probability (at least one matched pair)$=1$ - Probability (no matched pair out of 1,225 pairs)
+$$
+=1-(364 / 365)^{1225}=0.965
+$$
+					
+Other Interesting things you can relate now are:
+
+1. Once you have only $23$ people there is a $50\%$ chance of a shared birthday.
+
+2. If you get to $30$ people, then there is a $70\%$ chance of a shared birthday.
+
+3. And, in a room of $75$, there is a $99.9\%$ chance of at least two having the same birthday.
+
+One of the best demonstrations of this paradox (of $23$ people) was at the $2014$ FIFA World Cup. Someone analyzed the $32$ teams (all containing $23$ players, remember), and found that in $16$ teams there were at least two players with the same birthday.
+
+One important thing is that the birthday paradox isn't a logical paradox since there's nothing self-contradictory about it, it's just unexpected at first sight.
+
+So next time you're in a classroom, at a party, or playing cricket or football, conduct your own experiment.
+
+### Did you find this page helpful? Consider sharing it

@@ -1,0 +1,28 @@
+---
+title: "BS Research Project"
+author: "Rasel Biswas"
+date: '2019-08-10'
+lastmod: '`r format(Sys.time(), "%A %B %d, %Y")`'
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    #social: ["facebook", "twitter", "linkedin"]
+    source_code: embed
+    vertical_layout: fill
+image:
+  caption: 
+  focal_point: Smart
+tags:
+- academic
+---
+
+Rasel’s research project for the B.S. (honors) degree at University of Dhaka.
+
+## Research Title:
+Impact of Sample Sizes on the Accuracy of Estimates for a Two-level Logistic Regression Model
+
+## Abstract:
+In a multilevel framework an important problem is calculating an adequate sample size that generates accurate estimates. Several researches have investigated the behavior of estimates in finite samples, particularly for continuous dependent variables. On the other hand, binary response multilevel models have been investigated less widely. In this research we investigate the sample behavior of estimates in a binary response multilevel model. Particularly, we analyze the influence of different factors on the accuracy of estimates and their profile likelihood confidence intervals for a 2-level logistic regression model, through a Monte Carlo simulation study. We investigate the hypothesis of: (a) different level-1 sample sizes; (b) different level-2 sample sizes; (c) different intra-class correlation coefficients. We investigate the bias of estimates by relative bias and, through a non-coverage indicator, the accuracy of the confidence interval. In all instances we have examined, the point estimates are unbiased (even with very small sample sizes), while the variance components are always underestimated. Despite some exceptions for the variance components, the profile likelihood confidence interval performs very well in all simulated conditions.
+
+## Full dissertation
+This is the gitbook link to read the full dissertation: https://rasel.rbind.io/project450

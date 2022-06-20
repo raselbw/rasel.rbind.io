@@ -1,0 +1,7 @@
+http://rasel.rbind.io/*            https://rasel.rbind.io/:splat  301!
+https://raselbiswas.netlify.com/*  https://rasel.rbind.io/:splat  301!
+http://raselbiswas.netlify.com/*   https://rasel.rbind.io/:splat  301!
+
+# Learn more: https://docs.netlify.com/routing/redirects/redirect-options
+# Rewrite a path without changing the URL
+# /project450/*    https://rasel-b.github.io/project450_book/:splat  200!
