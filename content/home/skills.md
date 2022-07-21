@@ -23,8 +23,8 @@ subtitle = ""
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
-  name = "R"
-  description = "tidyverse + ggplot2"
+  name = "R Programming"
+  description = "(tidyverse + ggplot2)"
 
 #[[feature]]
 #  icon = "code"
