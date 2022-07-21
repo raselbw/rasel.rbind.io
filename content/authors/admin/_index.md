@@ -41,4 +41,5 @@ user_groups:
 - Researchers
 - Visitors
 ---
-I graduated from the University of Dhaka with a B.S. in Applied Statistics and then received an M.S. in Applied Statistics from the same university. I'm a fan of the statistical programming language [**R**](https://www.r-project.org/), to the extent that even this very website was built using R.
+I graduated from the University of Dhaka with a B.S. in Applied Statistics and then received an M.S. in Applied Statistics from the same university.
+I am a fan of [**R**](https://www.r-project.org/), and I have been using it for statistical analysis for more than 5 years. I worked as a Teaching Fellow for the Biostatistics course in the Master of Public Health (MPH) Programme at BRAC James P Grant School of Public Health, BRAC University.
