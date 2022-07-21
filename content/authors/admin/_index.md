@@ -1,6 +1,6 @@
 ---
 title: "Rasel Biswas"
-bio: Rasel is a graduate of Applied Statistics from University of Dhaka.
+bio: Rasel is a graduate of Applied Statistics from Dhaka University.
 education:
   courses:
   - course: B.S. in Applied Statisics
@@ -41,4 +41,4 @@ user_groups:
 - Researchers
 - Visitors
 ---
-I graduated from the University of Dhaka with a B.S. in Applied Statistics and then received a Master's degree in Applied Statistics from the same university. I'm a fan of the statistical programming language [**R**](https://www.r-project.org/), to the extent that even this very website was built using R.
+I graduated from the University of Dhaka with a B.S. in Applied Statistics and then received an M.S. in Applied Statistics from the same university. I'm a fan of the statistical programming language [**R**](https://www.r-project.org/), to the extent that even this very website was built using R.
