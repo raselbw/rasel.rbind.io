@@ -2,7 +2,7 @@
 title: "BS Research Project"
 author: "Rasel Biswas"
 date: '2019-08-10'
-#lastmod: '`r format(Sys.time(), "%A %B %d, %Y")`'
+##lastmod: '`r format(Sys.time(), "%A %B %d, %Y")`'
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
