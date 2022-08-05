@@ -86,14 +86,14 @@ email = "rbiswas1@isrt.ac.bd"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "Fazlul Huq Muslim Hall", city = "Dhaka University", region = "Shahbag", postcode = "1000", country = "Bangladesh", country_code = "BD"}
+address = {street = "Institute of Statistical Research and Training (ISRT)", city = "University of Dhaka", region = "Dhaka", postcode = "1000", country = "Bangladesh", country_code = "BD"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "23.7261725", longitude = "90.4037348"}
+coordinates = {latitude = "23.7287515", longitude = "90.3983617"}
 
 # Directions for visitors to locate you.
-directions = "Student dormitory behind the Curzon hall building"
+directions = "Inside the Mokarram Bhaban area"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
