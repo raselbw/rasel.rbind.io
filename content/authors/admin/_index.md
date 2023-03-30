@@ -1,6 +1,6 @@
 ---
 title: "Rasel Biswas"
-bio: Rasel is a graduate of Applied Statistics from Dhaka University.
+bio: Rasel is Lecturer of Applied Statistics at Dhaka University.
 education:
   courses:
   - course: B.S. in Applied Statisics
@@ -18,7 +18,7 @@ interests:
 organizations:
 - name: University of Dhaka
   url: https://du.ac.bd
-role: Applied Statistics Graduate
+role: Lecturer of Applied Statistics
 social:
 - icon: envelope
   icon_pack: fas
@@ -28,7 +28,7 @@ social:
   link: https://twitter.com/_raselbiswas
 - icon: facebook
   icon_pack: fab
-  link: https://facebook.com/raselbiswas11
+  link: https://facebook.com/raselbiswas17
 - icon: researchgate
   icon_pack: fab
   link: https://researchgate.net/profile/Rasel-Biswas
@@ -41,5 +41,4 @@ user_groups:
 - Researchers
 - Visitors
 ---
-I graduated from the University of Dhaka with a B.S. in Applied Statistics and then received an M.S. in Applied Statistics from the same university.
-I'm a fan of [**R**](https://www.r-project.org/), and I've been using R for statistical analysis for more than 5 years. I worked as a Teaching Fellow for the Biostatistics course in the Master of Public Health (MPH) Programme at BRAC James P Grant School of Public Health, BRAC University.
+I am a lecturer of Applied Statistics at the University of Dhaka. I graduated from the University of Dhaka with a B.S. in Applied Statistics and then received an M.S. in Applied Statistics from the same university. I teach courses on research methodology, design and analysis of experiments, and statistical computing. My research interests include missing data, multiple imputation, and design of experiments.
